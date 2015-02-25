@@ -31,7 +31,7 @@
 
    $(window).bind('load resize', function() {
      if (resizeTimer) clearTimeout(resizeTimer);
-     resizeTimer = setTimeout(portafolio_init(300), 100);
+        resizeTimer = setTimeout(portafolio_init('300'), 100);
 
      //$('.main').height(getWindowHeight()-70-50-$('.header').height());
 
