@@ -1,0 +1,119 @@
+@media only screen and (min-width: 900px)
+
+	.btn-menu
+		display none
+	.menu
+		float left
+		position static
+		background transparent
+		display block !important
+		li
+			display inline-block
+			vertical-align top
+			line-height 84px
+			position relative
+
+		.nav-child
+			position absolute
+			z-index 200
+			background azul
+			width 150px
+			li
+				display block
+				line-height 25px
+				border-bottom 1px solid #2b5c7c
+
+				a
+					display block
+					padding .5em
+					&:hover
+						background rgba(44, 50, 59, 1)
+				&:last-child
+					border none
+	.benefits
+		&-items
+			display flex
+		.benefit
+			width 45%
+			display inline-block
+	.contact
+		&-info
+			position absolute
+
+
+
+	.testimonials
+		background #F4F4F4
+		padding 2em 0
+
+		.inner
+			width 750px
+	.home
+		&-item
+			width 45%
+	.products
+		&-item
+			width 25%
+			float left
+	.projects
+		&-item
+			width 33.3333333%
+			float left
+
+
+	.project
+		text-align left
+		.pull-left
+		&-image
+			width 540px
+			height 400px
+			float left
+			margin-right 20px
+		
+		&-content
+			float left
+			width 45%
+		&-share
+			position absolute
+			right 0
+
+@media only screen and (min-width: 1024px)
+	.header
+		&-contactCall
+			display block
+
+	.project
+		&-image
+			width 440px
+
+
+@media only screen and (min-width: 1200px)
+
+	.inner
+		padding 0
+
+	.header
+		&-logo
+			margin-right 20px
+
+	.banner
+		&-info
+			&.left
+				left 0
+			&.right
+				right 0
+	.project
+		&-image
+			width 640px
+
+
+@media only screen and (max-width: 320px)
+	.banner
+		&-info
+			padding 2em
+
+		&-title
+			font-size 2.5em
+
+		&-subtitle
+			font-size 2em
