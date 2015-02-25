@@ -317,7 +317,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .left{left:0}
 .txt-center{text-align:center}
 .orange{color:#ec5220}
-.light-blue{color:#00aeef}
+.light-blue{color:red}
 .green{color:#8dc63f}
 .bg-green{background:#8dc63f}
 .inner{max-width:1200px;margin:0 auto;position:relative;padding:0 1em}
@@ -397,7 +397,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .footer{background:#2c323b;overflow:hidden;padding:1em 0}
 .footer-logo{float:left;margin-top:10px}
 .footer-copyright{color:#b6cde9;float:right;font-size:13px}
-.footer-copyright .icon-avotz{font-size:3em;color:#b6cde9;vertical-align:middle;padding-left:5px}
+.footer-copyright .icon-avotz{font-size:3em;color:red;vertical-align:middle;padding-left:5px}
 @media only screen and (min-width:900px){.btn-menu{display:none}
 .menu{float:left;position:static;background:0 0;display:block!important}
 .menu li{display:inline-block;vertical-align:top;line-height:84px;position:relative}

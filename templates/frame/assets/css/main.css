@@ -638,7 +638,7 @@ input[type="submit"] {
   color: #ec5220;
 }
 .light-blue {
-  color: #00aeef;
+  color: #f00;
 }
 .green {
   color: #8dc63f;
@@ -1128,7 +1128,7 @@ input[type="submit"] {
 }
 .footer-copyright .icon-avotz {
   font-size: 3em;
-  color: #b6cde9;
+  color: #f00;
   vertical-align: middle;
   padding-left: 5px;
 }
