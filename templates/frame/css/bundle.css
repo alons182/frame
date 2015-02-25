@@ -353,7 +353,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .testimony-author-avatar{float:right;margin-left:15px;margin-top:-15px}
 .testimony-author img{-webkit-border-radius:50%;border-radius:50%}
 .main{padding:25px 0;min-height:650px}
-.main ul{margin-left:45px;margin-bottom:25px}
+.main ul{margin-left:20px;margin-bottom:25px}
 .main .leftSection,.main .rightSection{display:inline-block;vertical-align:top}
 .main .rightSection{padding:1em;color:#000;width:100%}
 .main .leftSection{width:100%}
@@ -364,7 +364,6 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .benefits .benefit{display:block;vertical-align:top;position:relative;margin-bottom:1em;min-height:270px}
 .benefits .benefit-img{display:none;position:absolute;left:0}
 .benefits .benefit-list{margin-left:0}
-.benefits .benefit-list ul{margin-left:20px}
 .contact-info{position:static;right:2em;bottom:2em}
 .b2j_contact{background:#fff!important}
 .home{text-align:center}
@@ -401,7 +400,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .footer-copyright .icon-avotz{font-size:3em;color:#b6cde9;vertical-align:middle;padding-left:5px}
 @media only screen and (min-width:640px){.benefits .benefit-img{display:block}
 .benefits .benefit-list{margin-left:6em}
-.benefits .benefit-list ul{margin-left:45px}}
+.main ul{margin-left:45px}}
 @media only screen and (min-width:900px){.btn-menu{display:none}
 .menu{float:left;position:static;background:0 0;display:block!important}
 .menu li{display:inline-block;vertical-align:top;line-height:84px;position:relative}

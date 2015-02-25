@@ -823,7 +823,7 @@ input[type="submit"] {
   min-height: 650px;
 }
 .main ul {
-  margin-left: 45px;
+  margin-left: 20px;
   margin-bottom: 25px;
 }
 .main .leftSection,
@@ -877,9 +877,6 @@ input[type="submit"] {
 }
 .benefits .benefit-list {
   margin-left: 0;
-}
-.benefits .benefit-list ul {
-  margin-left: 20px;
 }
 .contact-info {
   position: static;
@@ -1142,7 +1139,7 @@ input[type="submit"] {
   .benefits .benefit-list {
     margin-left: 6em;
   }
-  .benefits .benefit-list ul {
+  .main ul {
     margin-left: 45px;
   }
 }
