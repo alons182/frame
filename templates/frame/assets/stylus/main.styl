@@ -317,7 +317,7 @@ button,input[type="submit"]
 			left 0
 		&-list
 			margin-left 0
-			
+
 .contact
 	&-info
 		position static
@@ -447,7 +447,7 @@ button,input[type="submit"]
 		overflow hidden
 	&-image
 		width 100% //640px
-		height 400px
+		min-height 400px
 		background-size cover
 		background-position center center
 		margin-bottom 20px
@@ -466,11 +466,52 @@ button,input[type="submit"]
 			font-size 1.5em
 			vertical-align middle
 	&-gallery
+			height 98px
+			margin-top 1em
+
+			img
+				width auto//100%
+				cursor pointer
+				float left
+
+
 		&-item
 			display inline-block
 			width 130px
 			height 88px
 			padding .5em
+
+
+	.cycle-prev
+	.cycle-next
+		font-size 2em
+		color white
+		background rgba(0,0,0,.4)
+		padding .5em
+		cursor pointer
+		position absolute
+		top 40%
+		z-index 200
+		&:hover
+			background rgba(0,0,0,.8)
+	.cycle-prev
+		left 0
+	.cycle-next
+		right 0
+
+	/*.cycle-pager-active
+		border 1px solid red*/
+
+	.thumbnails-wrapper
+		position relative
+		height 100%
+		width 100% //640px//870px
+		overflow hidden
+	
+
+
+
+
 
 .footer
 	background azul_oscuro

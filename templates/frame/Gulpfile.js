@@ -13,13 +13,14 @@ gulp.task('js', function () {
       './assets/js/vendor/jquery.hoverIntent.minified.js',
       './assets/js/vendor/jquery.magnific-popup.min.js',
       './assets/js/vendor/jquery.cycle2.min.js',
-      './assets/js/vendor/jquery.isotope.min.js',
       './assets/js/vendor/imagesloaded.min.js',
+      './assets/js/vendor/jquery.isotope.min.js',
+
       './assets/js/main.js'
 
     ])
     //.pipe(browserify())
-    .pipe(uglify({ compress: true }))
+    //.pipe(uglify({ compress: true }))
     //.pipe(stripDebug())
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('./js'));

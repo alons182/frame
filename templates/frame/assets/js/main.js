@@ -118,6 +118,38 @@
       }
     });
 
+     //create thumbs and append them
+      var thumbnails=$(".thumbnails");
+      var wrapper_wt=thumbnails.find("img:first").width();
+      var count = thumbnails.find("img").length;
+      var width_thumbnails = count * wrapper_wt;
+
+      thumbnails.css({width:width_thumbnails+ "px"});
+
+
+
+    var thumbnailsScroller = function(elem){
+
+          var wrapper =	elem;
+
+          var thumbnails	= wrapper.find('.thumbnails');
+          var inactiveMargin = thumbnails.find("img:first").width();
+          //wrapper.scrollLeft(thumbnails.outerWidth());
+          wrapper.bind('mousemove',function(e){
+
+                  var wrapperWidth = wrapper.width();
+                  var menuWidth = thumbnails.outerWidth() + 2 * inactiveMargin;
+                  var left = (e.pageX - wrapper.offset().left) * (menuWidth - wrapperWidth) / wrapperWidth - inactiveMargin;
+
+                  wrapper.scrollLeft(left);
+          });
+    };
+
+
+
+    thumbnailsScroller($('.project-gallery').find('.thumbnails-wrapper'));
+
+
 
 
 

@@ -389,11 +389,18 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .products-title{font-size:31px}
 .project{text-align:center}
 .project-detail{clear:both;overflow:hidden}
-.project-image{width:100%;height:400px;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;margin-bottom:20px}
+.project-image{width:100%;min-height:400px;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;margin-bottom:20px}
 .project-image img{width:100%}
 .project-content{margin-bottom:20px}
 .project-share a{display:inline-block;padding:.5em;color:#787878;font-size:1.5em;vertical-align:middle}
-.project-gallery-item{display:inline-block;width:130px;height:88px;padding:.5em}
+.project-gallery{height:98px;margin-top:1em}
+.project-gallery img{width:auto;cursor:pointer;float:left}
+.project-item{display:inline-block;width:130px;height:88px;padding:.5em}
+.project .cycle-next,.project .cycle-prev{font-size:2em;color:#fff;background:rgba(0,0,0,.4);padding:.5em;cursor:pointer;position:absolute;top:40%;z-index:200}
+.project .cycle-next:hover,.project .cycle-prev:hover{background:rgba(0,0,0,.8)}
+.project .cycle-prev{left:0}
+.project .cycle-next{right:0}
+.project .thumbnails-wrapper{position:relative;height:100%;width:100%;overflow:hidden}
 .footer{background:#2c323b;overflow:hidden;padding:1em 0}
 .footer-logo{float:left;margin-top:10px}
 .footer-copyright{color:#b6cde9;float:right;font-size:13px}
@@ -420,7 +427,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .products-item{width:25%;float:left}
 .projects-item{width:33.3333333%;float:left}
 .project{text-align:left}
-.project .pull-left,.project-image{width:540px;height:400px;float:left;margin-right:20px}
+.project .pull-left,.project-image{width:540px;float:left;margin-right:20px}
 .project-content{float:left;width:45%}
 .project-share{position:absolute;right:0}}
 @media only screen and (min-width:1024px){.header-contactCall{display:block}
