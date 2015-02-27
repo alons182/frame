@@ -471,8 +471,7 @@ button,input[type="submit"]
 
 			img
 				width auto//100%
-				cursor pointer
-				float left
+
 
 
 		&-item
@@ -499,16 +498,31 @@ button,input[type="submit"]
 	.cycle-next
 		right 0
 
-	/*.cycle-pager-active
-		border 1px solid red*/
+	.cycle-pager-active
+		&:after
+			background rgba(0,0,0,0) !important
 
 	.thumbnails-wrapper
 		position relative
 		height 100%
 		width 100% //640px//870px
 		overflow hidden
-	
-
+	.thumbnail
+		display block
+		cursor pointer
+		float left
+		position relative
+		&:after
+			position absolute
+			content ''
+			width 100%
+			height 90%
+			left 0
+			right 0
+			top 0
+			bottom 0
+			background rgba(0,0,0,.5)
+			transition all .3s ease
 
 
 
