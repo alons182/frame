@@ -3,6 +3,7 @@
   "version": "0.0.1",
 
   "devDependencies": {
+    "browser-sync": "^2.2.1",
     "gulp-uglify": "^0.3.0",
     "gulp": "^3.8.10",
     "gulp-strip-debug": "^0.3.0",

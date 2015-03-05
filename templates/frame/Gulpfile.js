@@ -4,7 +4,17 @@ var gulp        = require('gulp'),
     minifyCSS   = require('gulp-minify-css'),
     stylus      = require('gulp-stylus'),
     nib         = require('nib'),
-    concat      = require('gulp-concat');
+    concat      = require('gulp-concat'),
+    browserSync = require('browser-sync');
+    var reload      = browserSync.reload;
+
+  // Dynamic server
+ gulp.task('browser-sync', function() {
+       browserSync({
+          proxy: "frame.dev"
+      });
+      
+  });
 
 
 gulp.task('js', function () {
@@ -23,7 +33,8 @@ gulp.task('js', function () {
     //.pipe(uglify({ compress: true }))
     //.pipe(stripDebug())
     .pipe(concat('bundle.js'))
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./js'))
+    .pipe(reload({stream:true}));
 
 });
 
@@ -38,7 +49,8 @@ gulp.task('css', function () {
   gulp.src(['./assets/css/magnific-popup.css','./assets/css/isotope.css', './assets/css/main.css'])
     .pipe(minifyCSS({ keepSpecialComments: '*', keepBreaks: '*'}))
     .pipe(concat('bundle.css'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(reload({stream:true}));
 });
 
 
@@ -48,7 +60,9 @@ gulp.task('watch', function () {
     gulp.watch(['./assets/js/**/*.js'],['js']);
     gulp.watch(['./assets/stylus/**/*.styl'],['stylus']);
     gulp.watch(['./assets/css/**/*.css'],['css']);
+    gulp.watch("./**/*.html").on('change', reload);
+    gulp.watch("./**/*.php").on('change', reload);
 
 });
 
-gulp.task('default', [ 'js','stylus','css', 'watch' ]);
+gulp.task('default', [ 'js','stylus','css','browser-sync', 'watch' ]);

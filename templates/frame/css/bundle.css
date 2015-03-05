@@ -359,11 +359,20 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .main .leftSection{width:100%}
 .bgid-101 .main{min-height:0}
 .bgid-102 .projects{margin-top:-25px}
-.green-build{overflow:hidden}
-.benefits-items{display:block;-webkit-box-lines:multiple;-moz-box-lines:multiple;-o-box-lines:multiple;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-moz-box-pack:justify;-o-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between}
-.benefits .benefit{display:block;vertical-align:top;position:relative;margin-bottom:1em;min-height:270px}
-.benefits .benefit-img{display:none;position:absolute;left:0}
-.benefits .benefit-list{margin-left:0}
+.benefits-tabs,.green-build{overflow:hidden}
+.benefits-tabs ul{margin:0;padding:0;list-style:none}
+.benefits-tabs li{display:inline-block;vertical-align:top;background-color:#446a8d;cursor:pointer;color:#fff;padding:.3em;margin-bottom:.5em}
+.benefits-tabs li.active,.benefits-tabs li:hover{background-color:#00aeef}
+.benefits-container{position:relative;padding-top:1em;min-height:360px}
+.benefits-item{opacity:0;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);display:none;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
+.benefits-item.is-visible{display:block!important;opacity:1;-ms-filter:none;filter:none}
+.benefits h3{font-weight:700}
+.benefits-img{display:none;max-width:540px;width:50%;margin-right:3em}
+.partners{margin-top:3em;text-align:center}
+.partners-title{text-align:center}
+.partners-img{filter:grayscale(90%);-webkit-filter:grayscale(90%);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease}
+.partners-img:hover{filter:grayscale(0);-webkit-filter:grayscale(0)}
+.partners-item{display:inline-block;padding:.3em}
 .contact-info{position:static;right:2em;bottom:2em}
 .b2j_contact{background:#fff!important}
 .home{text-align:center}
@@ -408,8 +417,8 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .footer-logo{float:left;margin-top:10px}
 .footer-copyright{color:#b6cde9;float:right;font-size:13px}
 .footer-copyright .icon-avotz{font-size:3em;color:#b6cde9;vertical-align:middle;padding-left:5px}
-@media only screen and (min-width:640px){.benefits .benefit-img{display:block}
-.benefits .benefit-list{margin-left:6em}
+@media only screen and (min-width:640px){.benefits-tabs ul{float:right}
+.benefits-img{display:block;float:left}
 .main ul{margin-left:45px}}
 @media only screen and (min-width:900px){.btn-menu{display:none}
 .menu{float:left;position:static;background:0 0;display:block!important}
@@ -419,8 +428,6 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .menu .nav-child li a{display:block;padding:.5em}
 .menu .nav-child li a:hover{background:#2c323b}
 .menu .nav-child li:last-child{border:none}
-.benefits-items{display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:box;display:flex}
-.benefits .benefit{width:45%;display:inline-block}
 .contact-info{position:absolute}
 .testimonials{background:#f4f4f4;padding:2em 0}
 .testimonials .inner{width:750px}

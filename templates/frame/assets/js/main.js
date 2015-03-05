@@ -2,7 +2,9 @@
 
   var btnMenu = $('.btn-menu'),
       menu = $('.menu'),
-      containerProjects = $('.projects-container');
+      containerProjects = $('.projects-container'),
+      tabsBenefits = $('.benefits-tabs'),
+      benefitsContainer = $('.benefits-container');
 
 
 
@@ -125,11 +127,12 @@
        var wrapper_wt=thumbnails.find("img:first").width();
        var count = thumbnails.find("img").length;
        var width_thumbnails = count * wrapper_wt;
-
-       thumbnails.css({width:width_thumbnails+ "px"});
-
-       thumbnailsScroller($('.project-gallery').find('.thumbnails-wrapper'));
-
+      
+        if (thumbnails.length)
+        {  
+          thumbnails.css({width:width_thumbnails+ "px"});
+          thumbnailsScroller($('.project-gallery').find('.thumbnails-wrapper'));
+        }
     });
 
 
@@ -151,6 +154,19 @@
                   wrapper.scrollLeft(left);
           });
     };
+
+
+    benefitsContainer.find('[data-benefit]').first().addClass('is-visible');
+    tabsBenefits.find('li').on('click', function (e) {
+      var $this = $(this);
+      tabsBenefits.find('li').removeClass('active');
+      $this.toggleClass('active');
+
+      benefitsContainer.find('[data-benefit]').removeClass('is-visible');
+
+      benefitsContainer.find('[data-benefit='+ $this.data('benefit')+ ']' ).addClass('is-visible');
+      
+    });
 
 
 

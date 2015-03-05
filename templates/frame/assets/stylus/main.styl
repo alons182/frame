@@ -1,4 +1,3 @@
-
 @import "nib"
 @import "normalize.styl"
 @import "icons.styl"
@@ -300,6 +299,46 @@ button,input[type="submit"]
 .green-build
 	overflow hidden
 .benefits
+	&-tabs
+		overflow hidden
+		ul
+			margin 0
+			padding 0
+			list-style none
+			
+		li 
+			display inline-block
+			vertical-align top
+			background-color azul
+			cursor pointer
+			color white
+			padding .3em
+			margin-bottom .5em
+			&.active 
+			&:hover 
+				background-color celeste
+	&-container
+		position relative
+		padding-top 1em
+		min-height 360px
+	&-item
+		opacity 0
+		display none
+		transition all .3s ease
+		&.is-visible
+			display block !important
+			opacity 1
+	h3
+		font-weight bold		
+	&-img
+		display none 
+		max-width 540px
+		width 50%
+		margin-right 3em
+		
+		
+	
+	/*	
 	&-items
 		display block
 		flex-wrap wrap
@@ -317,7 +356,24 @@ button,input[type="submit"]
 			left 0
 		&-list
 			margin-left 0
-
+	*/
+.partners
+	margin-top 3em
+	text-align center 
+	
+	&-title
+		text-align center
+	&-img 
+		filter grayscale(90%)
+		-webkit-filter: grayscale(90%)
+		transition all .5s ease
+		&:hover
+			filter grayscale(0%)
+			-webkit-filter: grayscale(0%)	
+	&-item 
+		display inline-block
+		padding .3em
+		
 .contact
 	&-info
 		position static
