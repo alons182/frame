@@ -370,7 +370,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .benefits-img{display:none;max-width:540px;width:50%;margin-right:3em}
 .partners{margin-top:3em;text-align:center}
 .partners-title{text-align:center}
-.partners-img{filter:grayscale(90%);-webkit-filter:grayscale(90%);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease}
+.partners-img{filter:grayscale(100%);-webkit-filter:grayscale(100%);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease}
 .partners-img:hover{filter:grayscale(0);-webkit-filter:grayscale(0)}
 .partners-item{display:inline-block;padding:.3em}
 .contact-info{position:static;right:2em;bottom:2em}
