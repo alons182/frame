@@ -158,7 +158,9 @@ button,input[type="submit"]
 
 	ul
 		list-style none
-
+	.celeste
+		&:hover
+			color celeste !important
 	.green
 		&:hover
 			color verde !important
@@ -581,7 +583,52 @@ button,input[type="submit"]
 			transition all .3s ease
 
 
-
+.team
+	margin-top 1em
+	&-title 
+		text-align center
+		//border-bottom 2px dotted gris 
+		padding-bottom .5em
+		
+	&-img 
+		border-radius 50%
+		width 168px
+		filter grayscale(100%)
+		-webkit-filter: grayscale(100%)
+		border 3px solid gris
+	&-readmore
+		background-color white
+		padding .5em
+		display none
+		color celeste
+		margin-top 2em
+		cursor pointer
+		&.is-visible
+			&:after
+				display none
+			&:before
+				display block
+		&:after
+			content 'Read More'
+			display block
+			text-align center
+		&:before
+			content 'Read Less'
+			text-align center
+			display none
+		&:focus
+			outline 0
+	&-person 
+		position relative
+		text-align center
+		border-bottom 1px dotted #707070
+		padding 1em 0
+	&-name
+		font-weight 700
+		text-align center
+	&-description
+		text-align left
+		
 
 .footer
 	background azul_oscuro
@@ -589,11 +636,19 @@ button,input[type="submit"]
 	padding 1em 0
 
 	&-logo
-		float left
-		margin-top 10px
+		display block
+		width 181px
+		margin 0 auto
+		//float left
+		//margin-top 10px
 	&-copyright
 		color #B6CDE9
-		float right
+		//position absolute
+		//right 0
+		//top 0
+		//float right
+		
+		text-align center
 		font-size 13px
 
 		.icon-avotz
@@ -601,6 +656,19 @@ button,input[type="submit"]
 			color #B6CDE9
 			vertical-align middle
 			padding-left 5px
+	&-links
+		text-align center
+	&-link
+		display inline-block
+		color #B6CDE9
+		padding .3em 1em
+		font-size 1.3em
+		&:nth-child(1):hover
+			color celeste
+		&:nth-child(2):hover
+			color naranja
+		&:nth-child(3):hover
+			color verde
 
 
 @import "responsive.styl"

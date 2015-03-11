@@ -169,6 +169,23 @@
     });
 
 
+// about team
+
+  $('[data-teamtoggle]').on('click', function (e) {
+
+     
+         //$('[data-teamdescription]').removeClass('is-visible');
+         $(this).toggleClass('is-visible').prev().toggleClass('is-visible');
+      
+     
+        
+
+      e.preventDefault();
+    
+  });
+
+
+
 
 
 

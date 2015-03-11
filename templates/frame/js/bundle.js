@@ -211,6 +211,23 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     });
 
 
+// about team
+
+  $('[data-teamtoggle]').on('click', function (e) {
+
+     
+         //$('[data-teamdescription]').removeClass('is-visible');
+         $(this).toggleClass('is-visible').prev().toggleClass('is-visible');
+      
+     
+        
+
+      e.preventDefault();
+    
+  });
+
+
+
 
 
 

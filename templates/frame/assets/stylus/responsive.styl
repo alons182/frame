@@ -11,6 +11,27 @@
 	.main
 		ul
 			margin-left 45px
+	
+		
+	.footer
+		&-logo
+			float left 
+			width auto
+			margin-top 10px
+		&-copyright
+			float right
+			position absolute
+			right 1em
+			top 0
+			
+		&-links
+			text-align center
+			
+			width 500px
+			margin 0 auto
+		&-link
+			padding .3em 2em
+			
 
 @media only screen and (min-width: 900px)
 
@@ -50,6 +71,30 @@
 		.benefit
 			width 45%
 			display inline-block*/
+	.team
+		display flex
+		justify-content space-between
+		flex-wrap wrap 
+		&-person
+			min-height 280px
+			width 45%
+		&-readmore
+			display block
+			
+		&-img 
+			float left
+			margin-right 1em
+			margin-top 2em
+		&-description
+			height 190px
+			overflow hidden
+			transition all .3s ease
+			
+			&.is-visible
+				height auto
+				overflow visible
+				
+					
 	.contact
 		&-info
 			position absolute
@@ -93,9 +138,9 @@
 		&-content
 			float left
 			width 45%
-		&-share
+		/*&-share
 			position absolute
-			right 0
+			right 0*/
 
 @media only screen and (min-width: 1024px)
 	.header
@@ -125,7 +170,9 @@
 	.project
 		&-image
 			width 640px
-
+	.footer
+		&-copyright
+			right 0
 
 @media only screen and (max-width: 460px)
 	.banner

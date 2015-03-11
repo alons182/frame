@@ -72,6 +72,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
         <footer class="footer">
             <div class="inner">
                 <span  class="footer-logo"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo-footer.png" alt="Frame Projects" /></span>
+                <?php if ($this->countModules('footer-links')) : ?>
+                    <jdoc:include type="modules" name="footer-links" style="none" />
+                <?php endif; ?>
                 <div class="footer-copyright">
                   © 2015 <span class="icon-avotz"></span>
                 </div>

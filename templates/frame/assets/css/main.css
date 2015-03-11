@@ -713,6 +713,9 @@ input[type="submit"] {
 .menu ul {
   list-style: none;
 }
+.menu .celeste:hover {
+  color: #00aeef !important;
+}
 .menu .green:hover {
   color: #8dc63f !important;
 }
@@ -1217,18 +1220,74 @@ input[type="submit"] {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.team {
+  margin-top: 1em;
+}
+.team-title {
+  text-align: center;
+  padding-bottom: 0.5em;
+}
+.team-img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 168px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  border: 3px solid #787878;
+}
+.team-readmore {
+  background-color: #fff;
+  padding: 0.5em;
+  display: none;
+  color: #00aeef;
+  margin-top: 2em;
+  cursor: pointer;
+}
+.team-readmore.is-visible:after {
+  display: none;
+}
+.team-readmore.is-visible:before {
+  display: block;
+}
+.team-readmore:after {
+  content: 'Read More';
+  display: block;
+  text-align: center;
+}
+.team-readmore:before {
+  content: 'Read Less';
+  text-align: center;
+  display: none;
+}
+.team-readmore:focus {
+  outline: 0;
+}
+.team-person {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px dotted #707070;
+  padding: 1em 0;
+}
+.team-name {
+  font-weight: 700;
+  text-align: center;
+}
+.team-description {
+  text-align: left;
+}
 .footer {
   background: #2c323b;
   overflow: hidden;
   padding: 1em 0;
 }
 .footer-logo {
-  float: left;
-  margin-top: 10px;
+  display: block;
+  width: 181px;
+  margin: 0 auto;
 }
 .footer-copyright {
   color: #b6cde9;
-  float: right;
+  text-align: center;
   font-size: 13px;
 }
 .footer-copyright .icon-avotz {
@@ -1236,6 +1295,24 @@ input[type="submit"] {
   color: #b6cde9;
   vertical-align: middle;
   padding-left: 5px;
+}
+.footer-links {
+  text-align: center;
+}
+.footer-link {
+  display: inline-block;
+  color: #b6cde9;
+  padding: 0.3em 1em;
+  font-size: 1.3em;
+}
+.footer-link:nth-child(1):hover {
+  color: #00aeef;
+}
+.footer-link:nth-child(2):hover {
+  color: #ec5220;
+}
+.footer-link:nth-child(3):hover {
+  color: #8dc63f;
 }
 @media only screen and (min-width: 640px) {
   .benefits-tabs ul {
@@ -1247,6 +1324,25 @@ input[type="submit"] {
   }
   .main ul {
     margin-left: 45px;
+  }
+  .footer-logo {
+    float: left;
+    width: auto;
+    margin-top: 10px;
+  }
+  .footer-copyright {
+    float: right;
+    position: absolute;
+    right: 1em;
+    top: 0;
+  }
+  .footer-links {
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+  }
+  .footer-link {
+    padding: 0.3em 2em;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -1286,6 +1382,51 @@ input[type="submit"] {
   .menu .nav-child li:last-child {
     border: none;
   }
+  .team {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .team-person {
+    min-height: 280px;
+    width: 45%;
+  }
+  .team-readmore {
+    display: block;
+  }
+  .team-img {
+    float: left;
+    margin-right: 1em;
+    margin-top: 2em;
+  }
+  .team-description {
+    height: 190px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .team-description.is-visible {
+    height: auto;
+    overflow: visible;
+  }
   .contact-info {
     position: absolute;
   }
@@ -1316,6 +1457,9 @@ input[type="submit"] {
   }
   .project {
     text-align: left;
+/*&-share
+			position absolute
+			right 0*/
   }
   .project .pull-left,
   .project-image {
@@ -1326,10 +1470,6 @@ input[type="submit"] {
   .project-content {
     float: left;
     width: 45%;
-  }
-  .project-share {
-    position: absolute;
-    right: 0;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1355,6 +1495,9 @@ input[type="submit"] {
   }
   .project-image {
     width: 640px;
+  }
+  .footer-copyright {
+    right: 0;
   }
 }
 @media only screen and (max-width: 460px) {
