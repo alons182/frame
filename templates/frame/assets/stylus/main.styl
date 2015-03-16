@@ -29,6 +29,8 @@ ul
 
 a
 	text-decoration none
+	color celeste
+	
 
 h1
 h2
@@ -273,7 +275,10 @@ button,input[type="submit"]
 	ul
 		margin-left 20px
 		margin-bottom 25px
-
+	a 
+		text-decoration underline
+		&:hover
+			text-decoration none
 
 	.leftSection
 	.rightSection
@@ -324,12 +329,11 @@ button,input[type="submit"]
 		padding-top 1em
 		min-height 360px
 	&-item
-		opacity 0
 		display none
-		transition all .3s ease
+		transition all .5s ease
+		
 		&.is-visible
-			display block !important
-			opacity 1
+			display block
 	h3
 		font-weight bold		
 	&-img
@@ -359,6 +363,7 @@ button,input[type="submit"]
 		&-list
 			margin-left 0
 	*/
+		
 .partners
 	margin-top 3em
 	text-align center 
@@ -375,7 +380,10 @@ button,input[type="submit"]
 	&-item 
 		display inline-block
 		padding .3em
-		
+.build-smart
+.build-green
+	&-gallery
+		text-align center		
 .contact
 	&-info
 		position static
@@ -523,6 +531,7 @@ button,input[type="submit"]
 			color gris
 			font-size 1.5em
 			vertical-align middle
+			text-decoration none
 	&-gallery
 			height 98px
 			margin-top 1em
@@ -585,6 +594,7 @@ button,input[type="submit"]
 
 .team
 	margin-top 1em
+	margin-bottom 3em
 	&-title 
 		text-align center
 		//border-bottom 2px dotted gris 

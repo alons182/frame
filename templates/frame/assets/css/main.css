@@ -572,6 +572,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: #00aeef;
 }
 h1,
 h2,
@@ -829,6 +830,12 @@ input[type="submit"] {
   margin-left: 20px;
   margin-bottom: 25px;
 }
+.main a {
+  text-decoration: underline;
+}
+.main a:hover {
+  text-decoration: none;
+}
 .main .leftSection,
 .main .rightSection {
   display: inline-block;
@@ -878,21 +885,15 @@ input[type="submit"] {
   min-height: 360px;
 }
 .benefits-item {
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   display: none;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .benefits-item.is-visible {
-  display: block !important;
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
+  display: block;
 }
 .benefits h3 {
   font-weight: bold;
@@ -926,6 +927,10 @@ input[type="submit"] {
 .partners-item {
   display: inline-block;
   padding: 0.3em;
+}
+.build-smart-gallery,
+.build-green-gallery {
+  text-align: center;
 }
 .contact-info {
   position: static;
@@ -1154,6 +1159,7 @@ input[type="submit"] {
   color: #787878;
   font-size: 1.5em;
   vertical-align: middle;
+  text-decoration: none;
 }
 .project-gallery {
   height: 98px;
@@ -1222,6 +1228,7 @@ input[type="submit"] {
 }
 .team {
   margin-top: 1em;
+  margin-bottom: 3em;
 }
 .team-title {
   text-align: center;
@@ -1478,6 +1485,31 @@ input[type="submit"] {
   }
   .project-image {
     width: 440px;
+  }
+  .build-smart-container,
+  .build-green-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .build-smart-item,
+  .build-green-item {
+    width: 48%;
   }
 }
 @media only screen and (min-width: 1200px) {
