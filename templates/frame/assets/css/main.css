@@ -988,15 +988,19 @@ input[type="submit"] {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0);
-  opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
   -webkit-transition: background 0.5s 0.5s, opacity 0.5s 0.5s;
   -moz-transition: background 0.5s 0.5s, opacity 0.5s 0.5s;
   -o-transition: background 0.5s 0.5s, opacity 0.5s 0.5s;
   -ms-transition: background 0.5s 0.5s, opacity 0.5s 0.5s;
   transition: background 0.5s 0.5s, opacity 0.5s 0.5s;
+/*&:hover
+			background-color rgba(0, 0, 0, 0.5)
+			opacity 1
+			transition background 0.2s, opacity 0.2s*/
 }
 .products-link:before,
 .projects-link:before {
@@ -1006,20 +1010,8 @@ input[type="submit"] {
   vertical-align: middle;
   margin-right: -0.4em;
 }
-.products-link:hover,
-.projects-link:hover {
-  background-color: rgba(0,0,0,0.5);
-  opacity: 1;
-  -ms-filter: none;
-  filter: none;
-  -webkit-transition: background 0.2s, opacity 0.2s;
-  -moz-transition: background 0.2s, opacity 0.2s;
-  -o-transition: background 0.2s, opacity 0.2s;
-  -ms-transition: background 0.2s, opacity 0.2s;
-  transition: background 0.2s, opacity 0.2s;
-}
-.products-link:hover div,
-.projects-link:hover div {
+.products-link div,
+.projects-link div {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -1029,10 +1021,10 @@ input[type="submit"] {
   -ms-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.products-link:hover h4,
-.projects-link:hover h4,
-.products-link:hover p,
-.projects-link:hover p {
+.products-link h4,
+.projects-link h4,
+.products-link p,
+.projects-link p {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -1042,16 +1034,16 @@ input[type="submit"] {
   -ms-transform: translateZ(0px);
   transform: translateZ(0px);
 }
-.products-link:hover h4,
-.projects-link:hover h4 {
+.products-link h4,
+.projects-link h4 {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   -moz-transition: opacity 0.5s, -moz-transform 0.5s;
   -o-transition: opacity 0.5s, -o-transform 0.5s;
   -ms-transition: opacity 0.5s, -ms-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
 }
-.products-link:hover p,
-.projects-link:hover p {
+.products-link p,
+.projects-link p {
   -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
   -moz-transition: background-color 0.5s, opacity 0.5s 0.2s, -moz-transform 0.5s 0.2s;
   -o-transition: background-color 0.5s, opacity 0.5s 0.2s, -o-transform 0.5s 0.2s;
@@ -1336,6 +1328,58 @@ input[type="submit"] {
   }
   .projects-item.featured h4 {
     font-size: 4em;
+  }
+  .projects-link {
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+  }
+  .projects-link:hover {
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transition: background 0.2s, opacity 0.2s;
+    -moz-transition: background 0.2s, opacity 0.2s;
+    -o-transition: background 0.2s, opacity 0.2s;
+    -ms-transition: background 0.2s, opacity 0.2s;
+    transition: background 0.2s, opacity 0.2s;
+  }
+  .projects-link:hover div {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transition: opacity 0.2s;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -ms-transition: opacity 0.2s;
+    transition: opacity 0.2s;
+  }
+  .projects-link:hover h4,
+  .projects-link:hover p {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateZ(0px);
+    -moz-transform: translateZ(0px);
+    -o-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    transform: translateZ(0px);
+  }
+  .projects-link:hover h4 {
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+    -o-transition: opacity 0.5s, -o-transform 0.5s;
+    -ms-transition: opacity 0.5s, -ms-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  .projects-link:hover p {
+    -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
+    -moz-transition: background-color 0.5s, opacity 0.5s 0.2s, -moz-transform 0.5s 0.2s;
+    -o-transition: background-color 0.5s, opacity 0.5s 0.2s, -o-transform 0.5s 0.2s;
+    -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
+    transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
   }
   .footer-logo {
     float: left;
