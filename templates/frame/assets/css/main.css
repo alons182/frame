@@ -975,7 +975,9 @@ input[type="submit"] {
 			max-height 225px*/
 }
 .products-item.default h4,
-.projects-item.default h4 {
+.projects-item.default h4,
+.products-item.featured h4,
+.projects-item.featured h4 {
   font-size: 2em;
 }
 .products-link,
@@ -1331,6 +1333,9 @@ input[type="submit"] {
   }
   .main ul {
     margin-left: 45px;
+  }
+  .projects-item.featured h4 {
+    font-size: 4em;
   }
   .footer-logo {
     float: left;
