@@ -49,8 +49,11 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
                 <jdoc:include type="modules" name="menu" style="none" />
             </nav>
             <div class="header-contactCall">
-              <i class="icon-phone"></i>
-              <p>Call +506 2653 6765</p>
+              
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-twitter"></i></a>
+              <a href="#"><i class="icon-google-plus"></i></a>
+              <a href="#"><i class="icon-skype"></i></a>
             </div>
           </div>
         </header>

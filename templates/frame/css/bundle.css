@@ -288,7 +288,7 @@ input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-sea
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
-@font-face{font-family:frame;src:url(../fonts/frame.eot?55ya0r);src:url(../fonts/frame.eot?#iefix55ya0r) format('embedded-opentype'),url(../fonts/frame.woff?55ya0r) format('woff'),url(../fonts/frame.ttf?55ya0r) format('truetype'),url(../fonts/frame.svg?55ya0r#frame) format('svg');font-weight:400;font-style:normal}
+@font-face{font-family:frame;src:url(../fonts/frame.eot?w7kbvt);src:url(../fonts/frame.eot?#iefixw7kbvt) format('embedded-opentype'),url(../fonts/frame.woff?w7kbvt) format('woff'),url(../fonts/frame.ttf?w7kbvt) format('truetype'),url(../fonts/frame.svg?w7kbvt#frame) format('svg');font-weight:400;font-style:normal}
 [class*=" icon-"],[class^=icon-]{font-family:frame;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .icon-avotz:before{content:"\e600"}
 .icon-phone:before{content:"\f095"}
@@ -301,6 +301,7 @@ table{border-collapse:collapse;border-spacing:0}
 .icon-quote-left:before{content:"\f10d"}
 .icon-quote-right:before{content:"\f10e"}
 .icon-youtube:before{content:"\f167"}
+.icon-skype:before{content:"\f17e"}
 @font-face{font-family:geosans;src:url(../fonts/geosanslight-webfont.eot);src:url(../fonts/geosanslight-webfont.eot?#iefix) format('embedded-opentype'),url(../fonts/geosanslight-webfont.woff2) format('woff2'),url(../fonts/geosanslight-webfont.woff) format('woff'),url(../fonts/geosanslight-webfont.ttf) format('truetype'),url(../fonts/geosanslight-webfont.svg#geosanslightregular) format('svg');font-weight:400;font-style:normal}
 body{font-family:Lato,sans-serif;font-size:16px;font-weight:300;line-height:30px;color:#707070}
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
@@ -324,7 +325,8 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .header{height:84px;background:#2c323b}
 .header-logo{display:block;width:200px;line-height:74px;float:left;padding-top:10px;margin-right:5px}
 .header-logo-img{width:100%}
-.header-contactCall{display:none;float:right;color:#fff;border:1px solid #fff;padding:.5em 1em;margin-top:1.5em;border-bottom-width:3px;font-size:13px}
+.header-contactCall{display:none;float:right;color:#fff;border:1px solid #fff;padding:.5em;margin-top:.8em;border-bottom-width:3px;font-size:1.2em}
+.header-contactCall a{color:#fff;padding:0 .5em}
 .header-contactCall .icon-phone{color:#fff;display:inline-block;font-size:1em;vertical-align:middle;margin-right:.5em}
 .header-contactCall p{display:inline-block;margin:0}
 .btn-menu{background:0 0;border:0;font-size:2em;display:block;position:absolute;right:0;top:25px;outline:0;height:34px;width:40px}
@@ -334,7 +336,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .menu .green:hover{color:#8dc63f!important}
 .menu .orange:hover{color:#ec5220!important}
 .menu li{display:block;line-height:40px}
-.menu li a,.menu li span{display:block;padding:0 .5em;color:#b6cde9;cursor:pointer}
+.menu li a,.menu li span{display:block;padding:0 .5em;color:#b6cde9;cursor:pointer;font-size:1.2em}
 .menu li a:hover,.menu li span:hover{color:#fff}
 .menu .item-102 .nav-child{display:none!important}
 .menu .nav-child{display:none}
@@ -345,7 +347,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .banner-info left 1em,.banner-info.left,.banner-info.right{right:1em}
 .banner-title{margin:0;font-family:geosans;font-size:5em;color:#fff;font-weight:300}
 .banner-subtitle{color:#446a8d;font-family:geosans;font-size:3em;margin-top:.5em;display:block}
-.testimonials{background:#f4f4f4;padding:1.5em 0}
+.testimonials{background:#f4f4f4;padding:4em 0}
 .testimony-info{padding:0 2.5em;margin-bottom:1.5em}
 .testimony-info:after,.testimony-info:before{font-family:frame;color:#787878;position:absolute;font-size:2em}
 .testimony-info:after{right:0;content:'\f10e'}
@@ -380,9 +382,11 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .contact-info{position:static;right:2em;bottom:2em}
 .b2j_contact{background:#fff!important}
 .home{text-align:center}
-.home-items{margin-top:30px}
-.home-item{display:inline-block;vertical-align:top;padding:1em}
+.home-items{margin-top:0}
+.home-item{display:inline-block;vertical-align:top;padding:0 1em}
 .home-item h3{font-weight:500}
+.home-segments{margin-top:1em}
+.home-segment{display:inline-block;padding:0 2em}
 .products-container,.products-items,.projects-container,.projects-items{list-style:none;overflow:hidden;clear:both}
 .products-item,.projects-item{width:100%;line-height:0;position:relative}
 .products-item.default h4,.products-item.featured h4,.projects-item.default h4,.projects-item.featured h4{font-size:2em}
@@ -399,23 +403,23 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .products-image,.projects-image{width:100%}
 .products{margin-top:0}
 .products-title{font-size:31px}
-.project{text-align:center}
-.project-detail{clear:both;overflow:hidden}
-.project-image{width:100%;min-height:400px;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;margin-bottom:20px}
-.project-image img{width:100%}
-.project-content{margin-bottom:20px}
-.project-share a{display:inline-block;padding:.5em;color:#787878;font-size:1.5em;vertical-align:middle;text-decoration:none}
-.project-gallery{height:98px;margin-top:1em}
-.project-gallery img{width:auto}
-.project-item{display:inline-block;width:130px;height:88px;padding:.5em}
-.project .cycle-next,.project .cycle-prev{font-size:2em;color:#fff;background:rgba(0,0,0,.4);padding:.5em;cursor:pointer;position:absolute;top:40%;z-index:200}
-.project .cycle-next:hover,.project .cycle-prev:hover{background:rgba(0,0,0,.8)}
-.project .cycle-prev{left:0}
-.project .cycle-next{right:0}
-.project .cycle-pager-active:after{background:0 0!important}
-.project .thumbnails-wrapper{position:relative;height:100%;width:100%;overflow:hidden}
-.project .thumbnail{display:block;cursor:pointer;float:left;position:relative}
-.project .thumbnail:after{position:absolute;content:'';width:100%;height:90%;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.5);-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
+.build-fast,.build-green,.build-smart,.project{text-align:center}
+.build-fast-detail,.build-green-detail,.build-smart-detail,.project-detail{clear:both;overflow:hidden}
+.build-fast-image,.build-green-image,.build-smart-image,.project-image{width:100%;min-height:400px;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;background-position:center center;margin-bottom:20px}
+.build-fast-image img,.build-green-image img,.build-smart-image img,.project-image img{width:100%}
+.build-fast-content,.build-green-content,.build-smart-content,.project-content{margin-bottom:20px}
+.build-fast-share a,.build-green-share a,.build-smart-share a,.project-share a{display:inline-block;padding:.5em;color:#787878;font-size:1.5em;vertical-align:middle;text-decoration:none}
+.build-fast-gallery,.build-green-gallery,.build-smart-gallery,.project-gallery{height:98px;margin-top:1em}
+.build-fast-gallery img,.build-green-gallery img,.build-smart-gallery img,.project-gallery img{width:auto}
+.build-fast-item,.build-green-item,.build-smart-item,.project-item{display:inline-block;width:130px;height:88px;padding:.5em}
+.build-fast .cycle-next,.build-fast .cycle-prev,.build-green .cycle-next,.build-green .cycle-prev,.build-smart .cycle-next,.build-smart .cycle-prev,.project .cycle-next,.project .cycle-prev{font-size:2em;color:#fff;background:rgba(0,0,0,.4);padding:.5em;cursor:pointer;position:absolute;top:40%;z-index:200}
+.build-fast .cycle-next:hover,.build-fast .cycle-prev:hover,.build-green .cycle-next:hover,.build-green .cycle-prev:hover,.build-smart .cycle-next:hover,.build-smart .cycle-prev:hover,.project .cycle-next:hover,.project .cycle-prev:hover{background:rgba(0,0,0,.8)}
+.build-fast .cycle-prev,.build-green .cycle-prev,.build-smart .cycle-prev,.project .cycle-prev{left:0}
+.build-fast .cycle-next,.build-green .cycle-next,.build-smart .cycle-next,.project .cycle-next{right:0}
+.build-fast .cycle-pager-active:after,.build-green .cycle-pager-active:after,.build-smart .cycle-pager-active:after,.project .cycle-pager-active:after{background:0 0!important}
+.build-fast .thumbnails-wrapper,.build-green .thumbnails-wrapper,.build-smart .thumbnails-wrapper,.project .thumbnails-wrapper{position:relative;height:100%;width:100%;overflow:hidden}
+.build-fast .thumbnail,.build-green .thumbnail,.build-smart .thumbnail,.project .thumbnail{display:block;cursor:pointer;float:left;position:relative}
+.build-fast .thumbnail:after,.build-green .thumbnail:after,.build-smart .thumbnail:after,.project .thumbnail:after{position:absolute;content:'';width:100%;height:90%;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,.5);-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
 .team{margin-top:1em;margin-bottom:3em}
 .team-title{text-align:center;padding-bottom:.5em}
 .team-img{-webkit-border-radius:50%;border-radius:50%;width:168px;filter:grayscale(100%);-webkit-filter:grayscale(100%);border:3px solid #787878}
@@ -451,8 +455,8 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .footer-copyright{float:right;position:absolute;right:1em;top:0}
 .footer-links{text-align:center;width:500px;margin:0 auto}
 .footer-link{padding:.3em 2em}}
-@media only screen and (min-width:900px){.btn-menu{display:none}
-.menu{float:left;position:static;background:0 0;display:block!important}
+@media only screen and (min-width:980px){.btn-menu{display:none}
+.menu{float:left;position:static;background:0 0;display:block!important;margin-left:.8em}
 .menu li{display:inline-block;vertical-align:top;line-height:84px;position:relative}
 .menu .nav-child{position:absolute;z-index:200;background:#446a8d;width:150px}
 .menu .nav-child li{display:block;line-height:25px;border-bottom:1px solid #2b5c7c}
@@ -466,22 +470,22 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .team-description{height:190px;overflow:hidden;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
 .team-description.is-visible{height:auto;overflow:visible}
 .contact-info{position:absolute}
-.testimonials{background:#f4f4f4;padding:2em 0}
+.testimonials{background:#f4f4f4;padding:4em 0}
 .testimonials .inner{width:750px}
 .main .rightSection{width:34%;margin-left:1em}
 .main .leftSection{width:64%}
 .home-item{width:45%}
 .products-item{width:25%;float:left}
 .projects-item{width:33.3333333%;float:left}
-.project{text-align:left}
-.project .pull-left,.project-image{width:540px;float:left;margin-right:20px}
-.project-content{float:left;width:45%}}
-@media only screen and (min-width:1024px){.header-contactCall{display:block}
-.project-image{width:440px}
+.build-fast,.build-green,.build-smart,.project{text-align:left}
+.build-fast .pull-left,.build-fast-image,.build-green .pull-left,.build-green-image,.build-smart .pull-left,.build-smart-image,.project .pull-left,.project-image{width:540px;float:left;margin-right:20px}
+.build-fast-content,.build-green-content,.build-smart-content,.project-content{float:left;width:45%}}
+@media only screen and (min-width:1024px){.project-image{width:440px}
 .build-green-container,.build-smart-container{display:-webkit-box;display:-moz-box;display:-webkit-flex;display:-ms-flexbox;display:box;display:flex;-webkit-box-pack:justify;-moz-box-pack:justify;-o-box-pack:justify;-ms-flex-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-box-lines:multiple;-moz-box-lines:multiple;-o-box-lines:multiple;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .build-green-item,.build-smart-item{width:48%}}
 @media only screen and (min-width:1200px){.inner{padding:0}
 .header-logo{margin-right:20px}
+.header-contactCall{display:block}
 .banner-info.left{left:0}
 .banner-info.right{right:0}
 .project-image{width:640px}

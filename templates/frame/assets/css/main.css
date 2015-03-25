@@ -496,8 +496,8 @@ table {
 }
 @font-face {
   font-family: 'frame';
-  src: url("../fonts/frame.eot?55ya0r");
-  src: url("../fonts/frame.eot?#iefix55ya0r") format('embedded-opentype'), url("../fonts/frame.woff?55ya0r") format('woff'), url("../fonts/frame.ttf?55ya0r") format('truetype'), url("../fonts/frame.svg?55ya0r#frame") format('svg');
+  src: url("../fonts/frame.eot?w7kbvt");
+  src: url("../fonts/frame.eot?#iefixw7kbvt") format('embedded-opentype'), url("../fonts/frame.woff?w7kbvt") format('woff'), url("../fonts/frame.ttf?w7kbvt") format('truetype'), url("../fonts/frame.svg?w7kbvt#frame") format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -546,6 +546,9 @@ table {
 }
 .icon-youtube:before {
   content: "\f167";
+}
+.icon-skype:before {
+  content: "\f17e";
 }
 @font-face {
   font-family: 'geosans';
@@ -673,10 +676,14 @@ input[type="submit"] {
   float: right;
   color: #fff;
   border: 1px solid #fff;
-  padding: 0.5em 1em;
-  margin-top: 1.5em;
+  padding: 0.5em;
+  margin-top: 0.8em;
   border-bottom-width: 3px;
-  font-size: 13px;
+  font-size: 1.2em;
+}
+.header-contactCall a {
+  color: #fff;
+  padding: 0 0.5em;
 }
 .header-contactCall .icon-phone {
   color: #fff;
@@ -733,6 +740,7 @@ input[type="submit"] {
   padding: 0 0.5em;
   color: #b6cde9;
   cursor: pointer;
+  font-size: 1.2em;
 }
 .menu li span:hover,
 .menu li a:hover {
@@ -786,7 +794,7 @@ input[type="submit"] {
 }
 .testimonials {
   background: #f4f4f4;
-  padding: 1.5em 0;
+  padding: 4em 0;
 }
 .testimony-info {
   padding: 0 2.5em;
@@ -944,15 +952,22 @@ input[type="submit"] {
   text-align: center;
 }
 .home-items {
-  margin-top: 30px;
+  margin-top: 0;
 }
 .home-item {
   display: inline-block;
   vertical-align: top;
-  padding: 1em 1em;
+  padding: 0 1em;
 }
 .home-item h3 {
   font-weight: 500;
+}
+.home-segments {
+  margin-top: 1em;
+}
+.home-segment {
+  display: inline-block;
+  padding: 0 2em;
 }
 .products-items,
 .projects-items,
@@ -1125,13 +1140,22 @@ input[type="submit"] {
 .products-title {
   font-size: 31px;
 }
+.build-fast,
+.build-smart,
+.build-green,
 .project {
   text-align: center;
 }
+.build-fast-detail,
+.build-smart-detail,
+.build-green-detail,
 .project-detail {
   clear: both;
   overflow: hidden;
 }
+.build-fast-image,
+.build-smart-image,
+.build-green-image,
 .project-image {
   width: 100%;
   min-height: 400px;
@@ -1141,12 +1165,21 @@ input[type="submit"] {
   background-position: center center;
   margin-bottom: 20px;
 }
+.build-fast-image img,
+.build-smart-image img,
+.build-green-image img,
 .project-image img {
   width: 100%;
 }
+.build-fast-content,
+.build-smart-content,
+.build-green-content,
 .project-content {
   margin-bottom: 20px;
 }
+.build-fast-share a,
+.build-smart-share a,
+.build-green-share a,
 .project-share a {
   display: inline-block;
   padding: 0.5em;
@@ -1155,20 +1188,35 @@ input[type="submit"] {
   vertical-align: middle;
   text-decoration: none;
 }
+.build-fast-gallery,
+.build-smart-gallery,
+.build-green-gallery,
 .project-gallery {
   height: 98px;
   margin-top: 1em;
 }
+.build-fast-gallery img,
+.build-smart-gallery img,
+.build-green-gallery img,
 .project-gallery img {
   width: auto;
 }
+.build-fast-item,
+.build-smart-item,
+.build-green-item,
 .project-item {
   display: inline-block;
   width: 130px;
   height: 88px;
   padding: 0.5em;
 }
+.build-fast .cycle-prev,
+.build-smart .cycle-prev,
+.build-green .cycle-prev,
 .project .cycle-prev,
+.build-fast .cycle-next,
+.build-smart .cycle-next,
+.build-green .cycle-next,
 .project .cycle-next {
   font-size: 2em;
   color: #fff;
@@ -1179,31 +1227,55 @@ input[type="submit"] {
   top: 40%;
   z-index: 200;
 }
+.build-fast .cycle-prev:hover,
+.build-smart .cycle-prev:hover,
+.build-green .cycle-prev:hover,
 .project .cycle-prev:hover,
+.build-fast .cycle-next:hover,
+.build-smart .cycle-next:hover,
+.build-green .cycle-next:hover,
 .project .cycle-next:hover {
   background: rgba(0,0,0,0.8);
 }
+.build-fast .cycle-prev,
+.build-smart .cycle-prev,
+.build-green .cycle-prev,
 .project .cycle-prev {
   left: 0;
 }
+.build-fast .cycle-next,
+.build-smart .cycle-next,
+.build-green .cycle-next,
 .project .cycle-next {
   right: 0;
 }
+.build-fast .cycle-pager-active:after,
+.build-smart .cycle-pager-active:after,
+.build-green .cycle-pager-active:after,
 .project .cycle-pager-active:after {
   background: rgba(0,0,0,0) !important;
 }
+.build-fast .thumbnails-wrapper,
+.build-smart .thumbnails-wrapper,
+.build-green .thumbnails-wrapper,
 .project .thumbnails-wrapper {
   position: relative;
   height: 100%;
   width: 100%;
   overflow: hidden;
 }
+.build-fast .thumbnail,
+.build-smart .thumbnail,
+.build-green .thumbnail,
 .project .thumbnail {
   display: block;
   cursor: pointer;
   float: left;
   position: relative;
 }
+.build-fast .thumbnail:after,
+.build-smart .thumbnail:after,
+.build-green .thumbnail:after,
 .project .thumbnail:after {
   position: absolute;
   content: '';
@@ -1401,7 +1473,7 @@ input[type="submit"] {
     padding: 0.3em 2em;
   }
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 980px) {
   .btn-menu {
     display: none;
   }
@@ -1410,6 +1482,7 @@ input[type="submit"] {
     position: static;
     background: transparent;
     display: block !important;
+    margin-left: 0.8em;
   }
   .menu li {
     display: inline-block;
@@ -1488,7 +1561,7 @@ input[type="submit"] {
   }
   .testimonials {
     background: #f4f4f4;
-    padding: 2em 0;
+    padding: 4em 0;
   }
   .testimonials .inner {
     width: 750px;
@@ -1511,27 +1584,36 @@ input[type="submit"] {
     width: 33.3333333%;
     float: left;
   }
+  .build-fast,
+  .build-smart,
+  .build-green,
   .project {
     text-align: left;
 /*&-share
 			position absolute
 			right 0*/
   }
+  .build-fast .pull-left,
+  .build-smart .pull-left,
+  .build-green .pull-left,
   .project .pull-left,
+  .build-fast-image,
+  .build-smart-image,
+  .build-green-image,
   .project-image {
     width: 540px;
     float: left;
     margin-right: 20px;
   }
+  .build-fast-content,
+  .build-smart-content,
+  .build-green-content,
   .project-content {
     float: left;
     width: 45%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .header-contactCall {
-    display: block;
-  }
   .project-image {
     width: 440px;
   }
@@ -1567,6 +1649,9 @@ input[type="submit"] {
   }
   .header-logo {
     margin-right: 20px;
+  }
+  .header-contactCall {
+    display: block;
   }
   .banner-info.left {
     left: 0;
