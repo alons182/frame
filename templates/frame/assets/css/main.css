@@ -746,7 +746,8 @@ input[type="submit"] {
 .menu li a:hover {
   color: #fff;
 }
-.menu .item-102 .nav-child {
+.menu .item-102 .nav-child,
+.menu .item-107 .nav-child {
   display: none !important;
 }
 .menu .nav-child {
@@ -863,6 +864,9 @@ input[type="submit"] {
 .bgid-102 .projects {
   margin-top: -25px;
 }
+.bgid-107 .offers {
+  margin-top: -25px;
+}
 .green-build {
   overflow: hidden;
 }
@@ -969,15 +973,15 @@ input[type="submit"] {
   display: inline-block;
   padding: 0 2em;
 }
-.products-items,
+.offer-items,
 .projects-items,
-.products-container,
+.offer-container,
 .projects-container {
   list-style: none;
   overflow: hidden;
   clear: both;
 }
-.products-item,
+.offer-item,
 .projects-item {
   width: 100%;
   line-height: 0;
@@ -989,13 +993,13 @@ input[type="submit"] {
 		&.landscape
 			max-height 225px*/
 }
-.products-item.default h4,
+.offer-item.default h4,
 .projects-item.default h4,
-.products-item.featured h4,
+.offer-item.featured h4,
 .projects-item.featured h4 {
   font-size: 2em;
 }
-.products-link,
+.offer-link,
 .projects-link {
   display: inline-block;
   position: absolute;
@@ -1017,7 +1021,7 @@ input[type="submit"] {
 			opacity 1
 			transition background 0.2s, opacity 0.2s*/
 }
-.products-link:before,
+.offer-link:before,
 .projects-link:before {
   content: '';
   display: inline-block;
@@ -1025,7 +1029,7 @@ input[type="submit"] {
   vertical-align: middle;
   margin-right: -0.4em;
 }
-.products-link div,
+.offer-link div,
 .projects-link div {
   opacity: 1;
   -ms-filter: none;
@@ -1036,9 +1040,9 @@ input[type="submit"] {
   -ms-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-.products-link h4,
+.offer-link h4,
 .projects-link h4,
-.products-link p,
+.offer-link p,
 .projects-link p {
   opacity: 1;
   -ms-filter: none;
@@ -1049,7 +1053,7 @@ input[type="submit"] {
   -ms-transform: translateZ(0px);
   transform: translateZ(0px);
 }
-.products-link h4,
+.offer-link h4,
 .projects-link h4 {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   -moz-transition: opacity 0.5s, -moz-transform 0.5s;
@@ -1057,7 +1061,7 @@ input[type="submit"] {
   -ms-transition: opacity 0.5s, -ms-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
 }
-.products-link p,
+.offer-link p,
 .projects-link p {
   -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
   -moz-transition: background-color 0.5s, opacity 0.5s 0.2s, -moz-transform 0.5s 0.2s;
@@ -1065,7 +1069,7 @@ input[type="submit"] {
   -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
   transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
 }
-.products-content,
+.offer-content,
 .projects-content {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1084,18 +1088,19 @@ input[type="submit"] {
   -ms-perspective: 300px;
   perspective: 300px;
 }
-.products-title,
+.offer-title,
 .projects-title,
-.products-description,
+.offer-description,
 .projects-description {
-  line-height: 1;
+  line-height: 25px;
   width: 90%;
   margin: 0 5%;
   word-wrap: break-word;
 }
-.products-title,
+.offer-title,
 .projects-title {
   font-size: 61px;
+  line-height: 1em;
   color: #fff;
   font-weight: 900;
   margin-bottom: 15px;
@@ -1113,7 +1118,7 @@ input[type="submit"] {
   -ms-transition: opacity 0.2s 0.2s, -ms-transform 0.2s 0.2s;
   transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
 }
-.products-description,
+.offer-description,
 .projects-description {
   color: #e3e3e3;
   opacity: 0;
@@ -1130,7 +1135,7 @@ input[type="submit"] {
   -ms-transition: background-color 0.5s, opacity 0.2s, -ms-transform 0.2s;
   transition: background-color 0.5s, opacity 0.2s, transform 0.2s;
 }
-.products-image,
+.offer-image,
 .projects-image {
   width: 100%;
 }
@@ -1143,12 +1148,14 @@ input[type="submit"] {
 .build-fast,
 .build-smart,
 .build-green,
+.offer,
 .project {
   text-align: center;
 }
 .build-fast-detail,
 .build-smart-detail,
 .build-green-detail,
+.offer-detail,
 .project-detail {
   clear: both;
   overflow: hidden;
@@ -1156,6 +1163,7 @@ input[type="submit"] {
 .build-fast-image,
 .build-smart-image,
 .build-green-image,
+.offer-image,
 .project-image {
   width: 100%;
   min-height: 400px;
@@ -1168,18 +1176,21 @@ input[type="submit"] {
 .build-fast-image img,
 .build-smart-image img,
 .build-green-image img,
+.offer-image img,
 .project-image img {
   width: 100%;
 }
 .build-fast-content,
 .build-smart-content,
 .build-green-content,
+.offer-content,
 .project-content {
   margin-bottom: 20px;
 }
 .build-fast-share a,
 .build-smart-share a,
 .build-green-share a,
+.offer-share a,
 .project-share a {
   display: inline-block;
   padding: 0.5em;
@@ -1191,6 +1202,7 @@ input[type="submit"] {
 .build-fast-gallery,
 .build-smart-gallery,
 .build-green-gallery,
+.offer-gallery,
 .project-gallery {
   height: 98px;
   margin-top: 1em;
@@ -1198,12 +1210,14 @@ input[type="submit"] {
 .build-fast-gallery img,
 .build-smart-gallery img,
 .build-green-gallery img,
+.offer-gallery img,
 .project-gallery img {
   width: auto;
 }
 .build-fast-item,
 .build-smart-item,
 .build-green-item,
+.offer-item,
 .project-item {
   display: inline-block;
   width: 130px;
@@ -1213,10 +1227,12 @@ input[type="submit"] {
 .build-fast .cycle-prev,
 .build-smart .cycle-prev,
 .build-green .cycle-prev,
+.offer .cycle-prev,
 .project .cycle-prev,
 .build-fast .cycle-next,
 .build-smart .cycle-next,
 .build-green .cycle-next,
+.offer .cycle-next,
 .project .cycle-next {
   font-size: 2em;
   color: #fff;
@@ -1230,34 +1246,40 @@ input[type="submit"] {
 .build-fast .cycle-prev:hover,
 .build-smart .cycle-prev:hover,
 .build-green .cycle-prev:hover,
+.offer .cycle-prev:hover,
 .project .cycle-prev:hover,
 .build-fast .cycle-next:hover,
 .build-smart .cycle-next:hover,
 .build-green .cycle-next:hover,
+.offer .cycle-next:hover,
 .project .cycle-next:hover {
   background: rgba(0,0,0,0.8);
 }
 .build-fast .cycle-prev,
 .build-smart .cycle-prev,
 .build-green .cycle-prev,
+.offer .cycle-prev,
 .project .cycle-prev {
   left: 0;
 }
 .build-fast .cycle-next,
 .build-smart .cycle-next,
 .build-green .cycle-next,
+.offer .cycle-next,
 .project .cycle-next {
   right: 0;
 }
 .build-fast .cycle-pager-active:after,
 .build-smart .cycle-pager-active:after,
 .build-green .cycle-pager-active:after,
+.offer .cycle-pager-active:after,
 .project .cycle-pager-active:after {
   background: rgba(0,0,0,0) !important;
 }
 .build-fast .thumbnails-wrapper,
 .build-smart .thumbnails-wrapper,
 .build-green .thumbnails-wrapper,
+.offer .thumbnails-wrapper,
 .project .thumbnails-wrapper {
   position: relative;
   height: 100%;
@@ -1267,6 +1289,7 @@ input[type="submit"] {
 .build-fast .thumbnail,
 .build-smart .thumbnail,
 .build-green .thumbnail,
+.offer .thumbnail,
 .project .thumbnail {
   display: block;
   cursor: pointer;
@@ -1276,6 +1299,7 @@ input[type="submit"] {
 .build-fast .thumbnail:after,
 .build-smart .thumbnail:after,
 .build-green .thumbnail:after,
+.offer .thumbnail:after,
 .project .thumbnail:after {
   position: absolute;
   content: '';
@@ -1587,6 +1611,7 @@ input[type="submit"] {
   .build-fast,
   .build-smart,
   .build-green,
+  .offer,
   .project {
     text-align: left;
 /*&-share
@@ -1596,10 +1621,12 @@ input[type="submit"] {
   .build-fast .pull-left,
   .build-smart .pull-left,
   .build-green .pull-left,
+  .offer .pull-left,
   .project .pull-left,
   .build-fast-image,
   .build-smart-image,
   .build-green-image,
+  .offer-image,
   .project-image {
     width: 540px;
     float: left;
@@ -1608,6 +1635,7 @@ input[type="submit"] {
   .build-fast-content,
   .build-smart-content,
   .build-green-content,
+  .offer-content,
   .project-content {
     float: left;
     width: 45%;

@@ -57,7 +57,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
   });
 
-  $('<h1 class="txt-center">Others Projects</h1>').insertAfter('.project');
+  $('<h1 class="txt-center">Other Projects</h1>').insertAfter('.project');
 
   // MENU HOVER FUNCTION (SUBMENU)
 

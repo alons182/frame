@@ -15,7 +15,7 @@
 
   });
 
-  $('<h1 class="txt-center">Others Projects</h1>').insertAfter('.project');
+  $('<h1 class="txt-center">Other Projects</h1>').insertAfter('.project');
 
   // MENU HOVER FUNCTION (SUBMENU)
 
