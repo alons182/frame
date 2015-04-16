@@ -92,6 +92,11 @@ button,input[type="submit"]
 	color verde
 .bg-green
 	background verde
+	
+.list-big
+	font-size 1.5em
+	li 
+		line-height 45px
 .inner
 	max-width 1200px
 	margin 0 auto
@@ -188,6 +193,7 @@ button,input[type="submit"]
 				color #FFF
 
 	.item-102 // no mostrar el submenu de proyectos
+	.item-105
 	.item-107
 		.nav-child
 			display none !important
@@ -306,6 +312,10 @@ button,input[type="submit"]
 .bgid-102
 	.projects
 		margin-top -25px
+.bgid-105
+	.framing
+		margin-top -25px
+				
 .bgid-107
 	.offers
 		margin-top -25px
@@ -400,7 +410,15 @@ button,input[type="submit"]
 
 .b2j_contact
 	background #FFF !important
-
+.b2jcontainer
+	h2
+		background celeste
+	.btn
+		background azul_oscuro !important
+		padding .5rem !important
+		height auto !important
+	
+	
 .home
 	text-align center
 	&-items
@@ -417,7 +435,7 @@ button,input[type="submit"]
 	&-segment
 		display inline-block
 		padding  0 2em
-
+.framing
 .offer
 .projects
 	//margin-top -25px
@@ -523,6 +541,7 @@ button,input[type="submit"]
 .build-fast
 .build-smart
 .build-green
+.framing
 .offer	
 .project
 	text-align center
@@ -608,8 +627,29 @@ button,input[type="submit"]
 			bottom 0
 			background rgba(0,0,0,.5)
 			transition all .3s ease
-
-
+	&-builds
+		margin-top 4rem 
+		h1
+			font-size 6rem
+			line-height 4rem
+			font-weight 700
+			
+		a 
+			text-decoration none
+			color gris
+			&:hover
+				text-decoration underline
+		&-fast
+			&:hover
+				color orange
+		&-green
+			&:hover
+				color verde
+		&-smart
+			&:hover
+				color celeste
+			
+	
 .team
 	margin-top 1em
 	margin-bottom 3em
@@ -675,7 +715,7 @@ button,input[type="submit"]
 		//right 0
 		//top 0
 		//float right
-		
+			
 		text-align center
 		font-size 13px
 
@@ -689,8 +729,9 @@ button,input[type="submit"]
 	&-link
 		display inline-block
 		color #B6CDE9
-		padding .3em 1em
-		font-size 1.3em
+		padding .3em .5em
+		font-size 1.5em
+		font-style normal
 		&:nth-child(1):hover
 			color celeste
 		&:nth-child(2):hover

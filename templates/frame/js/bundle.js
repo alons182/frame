@@ -45,6 +45,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   var btnMenu = $('.btn-menu'),
       menu = $('.menu'),
       containerProjects = $('.projects-container'),
+      containerDifference = $('.difference-container'),
       tabsBenefits = $('.benefits-tabs'),
       benefitsContainer = $('.benefits-container');
 
@@ -58,7 +59,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
   });
 
   $('<h1 class="txt-center">Other Projects</h1>').insertAfter('.project');
-
+  $('<h1 class="txt-center">Other Services</h1>').insertAfter('.offer');
+  $('<h1 class="txt-center">Other Differences</h1>').insertAfter('.framing');
   // MENU HOVER FUNCTION (SUBMENU)
 
   menu.find(".parent").hoverIntent({
@@ -75,11 +77,15 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
 
 
    var resizeTimer = null;
+   var resizeTimer2 = null;
 
    $(window).bind('load resize', function() {
      if (resizeTimer) clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(portafolio_init('300'), 100);
-
+        resizeTimer = setTimeout(portafolio_init('300',containerProjects), 100);
+    
+    if (resizeTimer2) clearTimeout(resizeTimer2);
+        resizeTimer2 = setTimeout(portafolio_init('450',containerDifference), 100);
+     
      //$('.main').height(getWindowHeight()-70-50-$('.header').height());
 
    });
@@ -103,12 +109,32 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
           }
         });
 
-        portafolio_init('300');
+        portafolio_init('300', containerProjects);
+    });
+    containerDifference.find('.projects-item').css({opacity: 0});
+    containerDifference.imagesLoaded( function(){
+        containerDifference.find('.projects-item').css({opacity: 1});
+        containerDifference.isotope({
+          itemSelector : '.projects-item',
+          layoutMode: 'masonry',
+          sortBy: 'order',
+          sortAscending: true,
+          getSortData: {
+            order: function($elem){
+              var _order = $elem.hasClass('projects-item') ?
+                $elem.attr('data-order'):
+                $elem.find('.order').text();
+              return parseInt(_order);
+            }
+          }
+        });
+
+        portafolio_init('450', containerDifference);
     });
 
-    function portafolio_init(defaultwidth){
+    function portafolio_init(defaultwidth, container){
 
-      var contentWidth    = $('.projects-container').width();
+      var contentWidth    = container.width();
       var columnWidth     = defaultwidth;
       var curColCount     = 0;
       var maxColCount     = 0;
@@ -135,12 +161,12 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         featureColWidth = newColWidth * 2;
       }
 
-      $('.projects-item').width(newColWidth);
+      container.find('.projects-item').width(newColWidth);
 
-      $('.featured').width(featureColWidth);
+      container.find('.featured').width(featureColWidth);
 
-      containerProjects.imagesLoaded(function(){
-        containerProjects.isotope({
+      container.imagesLoaded(function(){
+        container.isotope({
           masonry:{
             columnWidth: newColWidth
           }
@@ -152,6 +178,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
       //ResizeImageContainer($('.product-image'));
     }
 
+    
 
     //GALLERY PROJECT
 

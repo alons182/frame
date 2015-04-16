@@ -16,10 +16,10 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="newsflash<?php echo $moduleclass_sfx; ?>">
-	<div class="projects-container" data-nav-color="#fff">
+	<div class="difference-container" data-nav-color="#fff">
 		<?php foreach ($list as $index => $item) : ?>
 
-			<div class="projects-item <?php echo ( $item->id == 19 || $item->id == 14 || $item->id == 23 || $item->id == 34 || $item->id == 35 || $item->id == 36 || $item->id == 40 || $item->id == 41) ?  'featured' : 'default'  ?>" data-order="<?php echo $index ?>">
+			<div class="projects-item <?php echo ( $item->id == 19) ?  'featured' : 'default'  ?>" data-order="<?php echo $index ?>">
 				<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
 			</div>
 		<?php endforeach; ?>

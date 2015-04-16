@@ -650,6 +650,12 @@ input[type="submit"] {
 .bg-green {
   background: #8dc63f;
 }
+.list-big {
+  font-size: 1.5em;
+}
+.list-big li {
+  line-height: 45px;
+}
 .inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -747,6 +753,7 @@ input[type="submit"] {
   color: #fff;
 }
 .menu .item-102 .nav-child,
+.menu .item-105 .nav-child,
 .menu .item-107 .nav-child {
   display: none !important;
 }
@@ -864,6 +871,9 @@ input[type="submit"] {
 .bgid-102 .projects {
   margin-top: -25px;
 }
+.bgid-105 .framing {
+  margin-top: -25px;
+}
 .bgid-107 .offers {
   margin-top: -25px;
 }
@@ -952,6 +962,14 @@ input[type="submit"] {
 .b2j_contact {
   background: #fff !important;
 }
+.b2jcontainer h2 {
+  background: #00aeef;
+}
+.b2jcontainer .btn {
+  background: #2c323b !important;
+  padding: 0.5rem !important;
+  height: auto !important;
+}
 .home {
   text-align: center;
 }
@@ -973,14 +991,17 @@ input[type="submit"] {
   display: inline-block;
   padding: 0 2em;
 }
+.framing-items,
 .offer-items,
 .projects-items,
+.framing-container,
 .offer-container,
 .projects-container {
   list-style: none;
   overflow: hidden;
   clear: both;
 }
+.framing-item,
 .offer-item,
 .projects-item {
   width: 100%;
@@ -993,12 +1014,15 @@ input[type="submit"] {
 		&.landscape
 			max-height 225px*/
 }
+.framing-item.default h4,
 .offer-item.default h4,
 .projects-item.default h4,
+.framing-item.featured h4,
 .offer-item.featured h4,
 .projects-item.featured h4 {
   font-size: 2em;
 }
+.framing-link,
 .offer-link,
 .projects-link {
   display: inline-block;
@@ -1021,6 +1045,7 @@ input[type="submit"] {
 			opacity 1
 			transition background 0.2s, opacity 0.2s*/
 }
+.framing-link:before,
 .offer-link:before,
 .projects-link:before {
   content: '';
@@ -1029,6 +1054,7 @@ input[type="submit"] {
   vertical-align: middle;
   margin-right: -0.4em;
 }
+.framing-link div,
 .offer-link div,
 .projects-link div {
   opacity: 1;
@@ -1040,8 +1066,10 @@ input[type="submit"] {
   -ms-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
+.framing-link h4,
 .offer-link h4,
 .projects-link h4,
+.framing-link p,
 .offer-link p,
 .projects-link p {
   opacity: 1;
@@ -1053,6 +1081,7 @@ input[type="submit"] {
   -ms-transform: translateZ(0px);
   transform: translateZ(0px);
 }
+.framing-link h4,
 .offer-link h4,
 .projects-link h4 {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
@@ -1061,6 +1090,7 @@ input[type="submit"] {
   -ms-transition: opacity 0.5s, -ms-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
 }
+.framing-link p,
 .offer-link p,
 .projects-link p {
   -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
@@ -1069,6 +1099,7 @@ input[type="submit"] {
   -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
   transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
 }
+.framing-content,
 .offer-content,
 .projects-content {
   opacity: 0;
@@ -1088,8 +1119,10 @@ input[type="submit"] {
   -ms-perspective: 300px;
   perspective: 300px;
 }
+.framing-title,
 .offer-title,
 .projects-title,
+.framing-description,
 .offer-description,
 .projects-description {
   line-height: 25px;
@@ -1097,6 +1130,7 @@ input[type="submit"] {
   margin: 0 5%;
   word-wrap: break-word;
 }
+.framing-title,
 .offer-title,
 .projects-title {
   font-size: 61px;
@@ -1118,6 +1152,7 @@ input[type="submit"] {
   -ms-transition: opacity 0.2s 0.2s, -ms-transform 0.2s 0.2s;
   transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
 }
+.framing-description,
 .offer-description,
 .projects-description {
   color: #e3e3e3;
@@ -1135,6 +1170,7 @@ input[type="submit"] {
   -ms-transition: background-color 0.5s, opacity 0.2s, -ms-transform 0.2s;
   transition: background-color 0.5s, opacity 0.2s, transform 0.2s;
 }
+.framing-image,
 .offer-image,
 .projects-image {
   width: 100%;
@@ -1148,6 +1184,7 @@ input[type="submit"] {
 .build-fast,
 .build-smart,
 .build-green,
+.framing,
 .offer,
 .project {
   text-align: center;
@@ -1155,6 +1192,7 @@ input[type="submit"] {
 .build-fast-detail,
 .build-smart-detail,
 .build-green-detail,
+.framing-detail,
 .offer-detail,
 .project-detail {
   clear: both;
@@ -1163,6 +1201,7 @@ input[type="submit"] {
 .build-fast-image,
 .build-smart-image,
 .build-green-image,
+.framing-image,
 .offer-image,
 .project-image {
   width: 100%;
@@ -1176,6 +1215,7 @@ input[type="submit"] {
 .build-fast-image img,
 .build-smart-image img,
 .build-green-image img,
+.framing-image img,
 .offer-image img,
 .project-image img {
   width: 100%;
@@ -1183,6 +1223,7 @@ input[type="submit"] {
 .build-fast-content,
 .build-smart-content,
 .build-green-content,
+.framing-content,
 .offer-content,
 .project-content {
   margin-bottom: 20px;
@@ -1190,6 +1231,7 @@ input[type="submit"] {
 .build-fast-share a,
 .build-smart-share a,
 .build-green-share a,
+.framing-share a,
 .offer-share a,
 .project-share a {
   display: inline-block;
@@ -1202,6 +1244,7 @@ input[type="submit"] {
 .build-fast-gallery,
 .build-smart-gallery,
 .build-green-gallery,
+.framing-gallery,
 .offer-gallery,
 .project-gallery {
   height: 98px;
@@ -1210,6 +1253,7 @@ input[type="submit"] {
 .build-fast-gallery img,
 .build-smart-gallery img,
 .build-green-gallery img,
+.framing-gallery img,
 .offer-gallery img,
 .project-gallery img {
   width: auto;
@@ -1217,6 +1261,7 @@ input[type="submit"] {
 .build-fast-item,
 .build-smart-item,
 .build-green-item,
+.framing-item,
 .offer-item,
 .project-item {
   display: inline-block;
@@ -1227,11 +1272,13 @@ input[type="submit"] {
 .build-fast .cycle-prev,
 .build-smart .cycle-prev,
 .build-green .cycle-prev,
+.framing .cycle-prev,
 .offer .cycle-prev,
 .project .cycle-prev,
 .build-fast .cycle-next,
 .build-smart .cycle-next,
 .build-green .cycle-next,
+.framing .cycle-next,
 .offer .cycle-next,
 .project .cycle-next {
   font-size: 2em;
@@ -1246,11 +1293,13 @@ input[type="submit"] {
 .build-fast .cycle-prev:hover,
 .build-smart .cycle-prev:hover,
 .build-green .cycle-prev:hover,
+.framing .cycle-prev:hover,
 .offer .cycle-prev:hover,
 .project .cycle-prev:hover,
 .build-fast .cycle-next:hover,
 .build-smart .cycle-next:hover,
 .build-green .cycle-next:hover,
+.framing .cycle-next:hover,
 .offer .cycle-next:hover,
 .project .cycle-next:hover {
   background: rgba(0,0,0,0.8);
@@ -1258,6 +1307,7 @@ input[type="submit"] {
 .build-fast .cycle-prev,
 .build-smart .cycle-prev,
 .build-green .cycle-prev,
+.framing .cycle-prev,
 .offer .cycle-prev,
 .project .cycle-prev {
   left: 0;
@@ -1265,6 +1315,7 @@ input[type="submit"] {
 .build-fast .cycle-next,
 .build-smart .cycle-next,
 .build-green .cycle-next,
+.framing .cycle-next,
 .offer .cycle-next,
 .project .cycle-next {
   right: 0;
@@ -1272,6 +1323,7 @@ input[type="submit"] {
 .build-fast .cycle-pager-active:after,
 .build-smart .cycle-pager-active:after,
 .build-green .cycle-pager-active:after,
+.framing .cycle-pager-active:after,
 .offer .cycle-pager-active:after,
 .project .cycle-pager-active:after {
   background: rgba(0,0,0,0) !important;
@@ -1279,6 +1331,7 @@ input[type="submit"] {
 .build-fast .thumbnails-wrapper,
 .build-smart .thumbnails-wrapper,
 .build-green .thumbnails-wrapper,
+.framing .thumbnails-wrapper,
 .offer .thumbnails-wrapper,
 .project .thumbnails-wrapper {
   position: relative;
@@ -1289,6 +1342,7 @@ input[type="submit"] {
 .build-fast .thumbnail,
 .build-smart .thumbnail,
 .build-green .thumbnail,
+.framing .thumbnail,
 .offer .thumbnail,
 .project .thumbnail {
   display: block;
@@ -1299,6 +1353,7 @@ input[type="submit"] {
 .build-fast .thumbnail:after,
 .build-smart .thumbnail:after,
 .build-green .thumbnail:after,
+.framing .thumbnail:after,
 .offer .thumbnail:after,
 .project .thumbnail:after {
   position: absolute;
@@ -1315,6 +1370,65 @@ input[type="submit"] {
   -o-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.build-fast-builds,
+.build-smart-builds,
+.build-green-builds,
+.framing-builds,
+.offer-builds,
+.project-builds {
+  margin-top: 4rem;
+}
+.build-fast-builds h1,
+.build-smart-builds h1,
+.build-green-builds h1,
+.framing-builds h1,
+.offer-builds h1,
+.project-builds h1 {
+  font-size: 6rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.build-fast-builds a,
+.build-smart-builds a,
+.build-green-builds a,
+.framing-builds a,
+.offer-builds a,
+.project-builds a {
+  text-decoration: none;
+  color: #787878;
+}
+.build-fast-builds a:hover,
+.build-smart-builds a:hover,
+.build-green-builds a:hover,
+.framing-builds a:hover,
+.offer-builds a:hover,
+.project-builds a:hover {
+  text-decoration: underline;
+}
+.build-fast-builds-fast:hover,
+.build-smart-builds-fast:hover,
+.build-green-builds-fast:hover,
+.framing-builds-fast:hover,
+.offer-builds-fast:hover,
+.project-builds-fast:hover {
+  color: #ffa500;
+}
+.build-fast-builds-green:hover,
+.build-smart-builds-green:hover,
+.build-green-builds-green:hover,
+.framing-builds-green:hover,
+.offer-builds-green:hover,
+.project-builds-green:hover {
+  color: #8dc63f;
+}
+.build-fast-builds-smart:hover,
+.build-smart-builds-smart:hover,
+.build-green-builds-smart:hover,
+.framing-builds-smart:hover,
+.offer-builds-smart:hover,
+.project-builds-smart:hover {
+  color: #00aeef;
 }
 .team {
   margin-top: 1em;
@@ -1399,8 +1513,9 @@ input[type="submit"] {
 .footer-link {
   display: inline-block;
   color: #b6cde9;
-  padding: 0.3em 1em;
-  font-size: 1.3em;
+  padding: 0.3em 0.5em;
+  font-size: 1.5em;
+  font-style: normal;
 }
 .footer-link:nth-child(1):hover {
   color: #00aeef;
@@ -1494,7 +1609,8 @@ input[type="submit"] {
     margin: 0 auto;
   }
   .footer-link {
-    padding: 0.3em 2em;
+    font-size: 2em;
+    padding: 0.3em 1em;
   }
 }
 @media only screen and (min-width: 980px) {
@@ -1611,6 +1727,7 @@ input[type="submit"] {
   .build-fast,
   .build-smart,
   .build-green,
+  .framing,
   .offer,
   .project {
     text-align: left;
@@ -1621,11 +1738,13 @@ input[type="submit"] {
   .build-fast .pull-left,
   .build-smart .pull-left,
   .build-green .pull-left,
+  .framing .pull-left,
   .offer .pull-left,
   .project .pull-left,
   .build-fast-image,
   .build-smart-image,
   .build-green-image,
+  .framing-image,
   .offer-image,
   .project-image {
     width: 540px;
@@ -1635,6 +1754,7 @@ input[type="submit"] {
   .build-fast-content,
   .build-smart-content,
   .build-green-content,
+  .framing-content,
   .offer-content,
   .project-content {
     float: left;

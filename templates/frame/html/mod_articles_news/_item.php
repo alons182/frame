@@ -32,8 +32,8 @@ $images  = json_decode($item->images);
 							<?php
 									$str = $item->introtext;
 
-									if (strlen($str) > 80)
-							   		$str = substr($str, 0, 80) . '...';
+									/*if (strlen($str) > 150)
+							   		$str = substr($str, 0, 150) . '...';*/
 
 									echo $str;
 
