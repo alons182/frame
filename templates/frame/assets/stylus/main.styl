@@ -627,6 +627,7 @@ button,input[type="submit"]
 			bottom 0
 			background rgba(0,0,0,.5)
 			transition all .3s ease
+	&-offer
 	&-builds
 		margin-top 4rem 
 		h1
@@ -639,16 +640,23 @@ button,input[type="submit"]
 			color gris
 			&:hover
 				text-decoration underline
+				
 		&-fast
 			&:hover
-				color orange
+				color orange 
 		&-green
 			&:hover
 				color verde
 		&-smart
 			&:hover
 				color celeste
-			
+	&-offer
+		h1
+			font-size 4rem
+			line-height 4rem
+		a
+			&:hover
+				color celeste		
 	
 .team
 	margin-top 1em

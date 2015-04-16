@@ -1371,6 +1371,12 @@ input[type="submit"] {
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+.build-fast-offer,
+.build-smart-offer,
+.build-green-offer,
+.framing-offer,
+.offer-offer,
+.project-offer,
 .build-fast-builds,
 .build-smart-builds,
 .build-green-builds,
@@ -1379,6 +1385,12 @@ input[type="submit"] {
 .project-builds {
   margin-top: 4rem;
 }
+.build-fast-offer h1,
+.build-smart-offer h1,
+.build-green-offer h1,
+.framing-offer h1,
+.offer-offer h1,
+.project-offer h1,
 .build-fast-builds h1,
 .build-smart-builds h1,
 .build-green-builds h1,
@@ -1389,6 +1401,12 @@ input[type="submit"] {
   line-height: 4rem;
   font-weight: 700;
 }
+.build-fast-offer a,
+.build-smart-offer a,
+.build-green-offer a,
+.framing-offer a,
+.offer-offer a,
+.project-offer a,
 .build-fast-builds a,
 .build-smart-builds a,
 .build-green-builds a,
@@ -1398,6 +1416,12 @@ input[type="submit"] {
   text-decoration: none;
   color: #787878;
 }
+.build-fast-offer a:hover,
+.build-smart-offer a:hover,
+.build-green-offer a:hover,
+.framing-offer a:hover,
+.offer-offer a:hover,
+.project-offer a:hover,
 .build-fast-builds a:hover,
 .build-smart-builds a:hover,
 .build-green-builds a:hover,
@@ -1406,6 +1430,12 @@ input[type="submit"] {
 .project-builds a:hover {
   text-decoration: underline;
 }
+.build-fast-offer-fast:hover,
+.build-smart-offer-fast:hover,
+.build-green-offer-fast:hover,
+.framing-offer-fast:hover,
+.offer-offer-fast:hover,
+.project-offer-fast:hover,
 .build-fast-builds-fast:hover,
 .build-smart-builds-fast:hover,
 .build-green-builds-fast:hover,
@@ -1414,6 +1444,12 @@ input[type="submit"] {
 .project-builds-fast:hover {
   color: #ffa500;
 }
+.build-fast-offer-green:hover,
+.build-smart-offer-green:hover,
+.build-green-offer-green:hover,
+.framing-offer-green:hover,
+.offer-offer-green:hover,
+.project-offer-green:hover,
 .build-fast-builds-green:hover,
 .build-smart-builds-green:hover,
 .build-green-builds-green:hover,
@@ -1422,12 +1458,35 @@ input[type="submit"] {
 .project-builds-green:hover {
   color: #8dc63f;
 }
+.build-fast-offer-smart:hover,
+.build-smart-offer-smart:hover,
+.build-green-offer-smart:hover,
+.framing-offer-smart:hover,
+.offer-offer-smart:hover,
+.project-offer-smart:hover,
 .build-fast-builds-smart:hover,
 .build-smart-builds-smart:hover,
 .build-green-builds-smart:hover,
 .framing-builds-smart:hover,
 .offer-builds-smart:hover,
 .project-builds-smart:hover {
+  color: #00aeef;
+}
+.build-fast-offer h1,
+.build-smart-offer h1,
+.build-green-offer h1,
+.framing-offer h1,
+.offer-offer h1,
+.project-offer h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+.build-fast-offer a:hover,
+.build-smart-offer a:hover,
+.build-green-offer a:hover,
+.framing-offer a:hover,
+.offer-offer a:hover,
+.project-offer a:hover {
   color: #00aeef;
 }
 .team {
