@@ -654,7 +654,7 @@ input[type="submit"] {
   font-size: 1.5em;
 }
 .list-big li {
-  line-height: 45px;
+  margin-bottom: 30px;
 }
 .inner {
   max-width: 1200px;
@@ -1174,6 +1174,52 @@ input[type="submit"] {
 .offer-image,
 .projects-image {
   width: 100%;
+}
+.services .projects-link {
+  background-color: rgba(0,0,0,0.5);
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: background 0.2s, opacity 0.2s;
+  -moz-transition: background 0.2s, opacity 0.2s;
+  -o-transition: background 0.2s, opacity 0.2s;
+  -ms-transition: background 0.2s, opacity 0.2s;
+  transition: background 0.2s, opacity 0.2s;
+}
+.services .projects-link div {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.services .projects-link h4,
+.services .projects-link p {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  transform: translateZ(0px);
+}
+.services .projects-link h4 {
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  -moz-transition: opacity 0.5s, -moz-transform 0.5s;
+  -o-transition: opacity 0.5s, -o-transform 0.5s;
+  -ms-transition: opacity 0.5s, -ms-transform 0.5s;
+  transition: opacity 0.5s, transform 0.5s;
+}
+.services .projects-link p {
+  -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
+  -moz-transition: background-color 0.5s, opacity 0.5s 0.2s, -moz-transform 0.5s 0.2s;
+  -o-transition: background-color 0.5s, opacity 0.5s 0.2s, -o-transform 0.5s 0.2s;
+  -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
+  transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
 }
 .products {
   margin-top: 0;

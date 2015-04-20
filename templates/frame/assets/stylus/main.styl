@@ -96,7 +96,7 @@ button,input[type="submit"]
 .list-big
 	font-size 1.5em
 	li 
-		line-height 45px
+		margin-bottom 30px
 .inner
 	max-width 1200px
 	margin 0 auto
@@ -534,6 +534,25 @@ button,input[type="submit"]
 	&-image
 		width 100%
 
+.services
+	.projects
+		&-link
+			background-color rgba(0, 0, 0, 0.5)
+			opacity 1
+			transition background 0.2s, opacity 0.2s
+
+			div///.projects-content
+				opacity 1
+				transition opacity 0.2s
+
+			h4///.projects-title
+			p///.projects-description
+				opacity 1
+				transform translateZ(0px)
+			h4///.projects-title
+				transition opacity 0.5s, transform 0.5s
+			p///.projects-description
+				transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s	
 .products
 	margin-top 0
 	&-title
