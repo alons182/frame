@@ -1151,6 +1151,7 @@ input[type="submit"] {
   -o-transition: opacity 0.2s 0.2s, -o-transform 0.2s 0.2s;
   -ms-transition: opacity 0.2s 0.2s, -ms-transform 0.2s 0.2s;
   transition: opacity 0.2s 0.2s, transform 0.2s 0.2s;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
 }
 .framing-description,
 .offer-description,
@@ -1175,7 +1176,8 @@ input[type="submit"] {
 .projects-image {
   width: 100%;
 }
-.services .projects-link {
+.services .projects-link,
+.difference .projects-link {
   background-color: rgba(0,0,0,0.5);
   opacity: 1;
   -ms-filter: none;
@@ -1186,7 +1188,8 @@ input[type="submit"] {
   -ms-transition: background 0.2s, opacity 0.2s;
   transition: background 0.2s, opacity 0.2s;
 }
-.services .projects-link div {
+.services .projects-link div,
+.difference .projects-link div {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -1197,7 +1200,9 @@ input[type="submit"] {
   transition: opacity 0.2s;
 }
 .services .projects-link h4,
-.services .projects-link p {
+.difference .projects-link h4,
+.services .projects-link p,
+.difference .projects-link p {
   opacity: 1;
   -ms-filter: none;
   filter: none;
@@ -1207,19 +1212,37 @@ input[type="submit"] {
   -ms-transform: translateZ(0px);
   transform: translateZ(0px);
 }
-.services .projects-link h4 {
+.services .projects-link h4,
+.difference .projects-link h4 {
   -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
   -moz-transition: opacity 0.5s, -moz-transform 0.5s;
   -o-transition: opacity 0.5s, -o-transform 0.5s;
   -ms-transition: opacity 0.5s, -ms-transform 0.5s;
   transition: opacity 0.5s, transform 0.5s;
 }
-.services .projects-link p {
+.services .projects-link p,
+.difference .projects-link p {
   -webkit-transition: background-color 0.5s, opacity 0.5s 0.2s, -webkit-transform 0.5s 0.2s;
   -moz-transition: background-color 0.5s, opacity 0.5s 0.2s, -moz-transform 0.5s 0.2s;
   -o-transition: background-color 0.5s, opacity 0.5s 0.2s, -o-transform 0.5s 0.2s;
   -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
   transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
+}
+.services .projects-center-info,
+.difference .projects-center-info {
+  background-color: transparent;
+}
+.services .projects-center-info .projects-title,
+.difference .projects-center-info .projects-title {
+  text-transform: uppercase;
+}
+.services .projects-title,
+.difference .projects-title {
+  text-align: center;
+}
+.services .projects-description,
+.difference .projects-description {
+  display: none;
 }
 .products {
   margin-top: 0;
@@ -1697,6 +1720,10 @@ input[type="submit"] {
     -ms-transition: background-color 0.5s, opacity 0.5s 0.2s, -ms-transform 0.5s 0.2s;
     transition: background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s;
   }
+  .services .projects-link:hover,
+  .difference .projects-link:hover {
+    background-color: transparent;
+  }
   .footer-logo {
     float: left;
     width: auto;
@@ -1901,7 +1928,8 @@ input[type="submit"] {
     padding: 0;
   }
   .header-logo {
-    margin-right: 20px;
+    width: 250px;
+    margin-right: 0;
   }
   .header-contactCall {
     display: block;

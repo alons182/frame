@@ -451,6 +451,7 @@ button,input[type="submit"]
 		width 100%
 		line-height 0
 		position relative
+		
 
 		&.default
 		&.featured
@@ -524,6 +525,7 @@ button,input[type="submit"]
 		opacity 0
 		transform translateZ(-30px)
 		transition opacity 0.2s 0.2s, transform 0.2s 0.2s
+		text-shadow 1px 1px 2px rgba(0, 0, 0, .75)
 
 	&-description
 		color #e3e3e3
@@ -535,6 +537,7 @@ button,input[type="submit"]
 		width 100%
 
 .services
+.difference
 	.projects
 		&-link
 			background-color rgba(0, 0, 0, 0.5)
@@ -552,7 +555,16 @@ button,input[type="submit"]
 			h4///.projects-title
 				transition opacity 0.5s, transform 0.5s
 			p///.projects-description
-				transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s	
+				transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s
+		&-center-info
+			background-color transparent
+			.projects-title 
+				text-transform uppercase
+		&-title 
+			text-align center
+			
+		&-description
+			display none	
 .products
 	margin-top 0
 	&-title
