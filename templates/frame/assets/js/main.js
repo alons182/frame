@@ -18,7 +18,7 @@
 
   $('<h1 class="txt-center">Other Projects</h1>').insertAfter('.project');
   $('<h1 class="txt-center">Other Services</h1>').insertAfter('.offer');
-  $('<h1 class="txt-center">Other Differences</h1>').insertAfter('.framing');
+
   // MENU HOVER FUNCTION (SUBMENU)
 
   menu.find(".parent").hoverIntent({
