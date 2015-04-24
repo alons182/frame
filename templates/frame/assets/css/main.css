@@ -1000,6 +1000,7 @@ input[type="submit"] {
   list-style: none;
   overflow: hidden;
   clear: both;
+  background: url("../img/bg_portafolio.png");
 }
 .framing-item,
 .offer-item,
