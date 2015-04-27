@@ -84,10 +84,28 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
         resizeTimer = setTimeout(portafolio_init('300',containerProjects), 100);
     
     if (resizeTimer2) clearTimeout(resizeTimer2);
-        resizeTimer2 = setTimeout(portafolio_init('450',containerDifference), 100);
+        resizeTimer2 = setTimeout(portafolio_init('300',containerDifference), 100);
      
      //$('.main').height(getWindowHeight()-70-50-$('.header').height());
 
+   });
+
+   //containerDifference.find('.projects-item').removeClass('expanded');
+   //containerDifference.find('.projects-item .projects-description').removeClass('expanded');
+   containerDifference.find('.projects-item div.projects-link').on('click', function (e) {
+      //console.log($(this).parent('.projects-item'));
+      var self = $(this).parent('.projects-item');
+      self.data('order',1);
+      console.log(self.data('order'));
+      portafolio_click('300',containerDifference, self);
+       console.log(self.data('order'));
+      containerDifference.find('.projects-item').removeClass('expanded');
+      containerDifference.find('.projects-item .projects-description').removeClass('expanded');
+      self.addClass('expanded').find('.projects-description').addClass('expanded');
+      
+      //containerDifference.isotope('updateSortData').isotope();
+     e.preventDefault();
+     
    });
 
 
@@ -129,7 +147,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
           }
         });
 
-        portafolio_init('450', containerDifference);
+        portafolio_init('300', containerDifference);
     });
 
     function portafolio_init(defaultwidth, container){
@@ -177,6 +195,53 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
       //ResizeImageContainer($('.projects-item'));
       //ResizeImageContainer($('.product-image'));
     }
+    function portafolio_click(defaultwidth, container, itemClicked){
+
+      var contentWidth    = container.width();
+      var columnWidth     = defaultwidth;
+      var curColCount     = 0;
+      var maxColCount     = 0;
+      var newColCount     = 0;
+      var newColWidth     = 0;
+      var featureColWidth = 0;
+
+      curColCount = Math.floor(contentWidth / columnWidth);
+
+      maxColCount = curColCount + 1;
+      if((maxColCount - (contentWidth / columnWidth)) > ((contentWidth / columnWidth) - curColCount)){
+        newColCount     = curColCount;
+      }
+      else{
+        newColCount = maxColCount;
+      }
+
+      newColWidth = contentWidth;
+      featureColWidth = contentWidth;
+
+
+      if(newColCount > 1){
+        newColWidth =Math.floor(contentWidth / newColCount);
+        featureColWidth = newColWidth * 2;
+      }
+
+      container.find('.projects-item').width(newColWidth);
+
+      itemClicked.width(featureColWidth);
+
+      container.imagesLoaded(function(){
+        container.isotope({
+          masonry:{
+            columnWidth: newColWidth,
+            
+          }
+        });
+
+      });
+
+      //ResizeImageContainer($('.projects-item'));
+      //ResizeImageContainer($('.product-image'));
+    }
+
 
     
 

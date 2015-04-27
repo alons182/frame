@@ -452,6 +452,7 @@ button,input[type="submit"]
 		width 100%
 		line-height 0
 		position relative
+		transition all .5s ease
 		
 
 		&.default
@@ -544,6 +545,7 @@ button,input[type="submit"]
 			background-color rgba(0, 0, 0, 0.5)
 			opacity 1
 			transition background 0.2s, opacity 0.2s
+			cursor pointer
 
 			div///.projects-content
 				opacity 1
@@ -559,13 +561,18 @@ button,input[type="submit"]
 				transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s
 		&-center-info
 			background-color transparent
-			.projects-title 
-				text-transform uppercase
+			
 		&-title 
 			text-align center
 			
 		&-description
-			display none	
+			display none
+	.expanded
+		/*.projects-center-info
+			h4
+				font-size 1rem*/
+		.projects-description
+			display block	
 .products
 	margin-top 0
 	&-title

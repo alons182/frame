@@ -40,13 +40,27 @@
 				h4///.projects-title
 					transition opacity 0.5s, transform 0.5s
 				p///.projects-description
-					transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s	
+					transition background-color 0.5s, opacity 0.5s 0.2s, transform 0.5s 0.2s
+		
+					
+					
 	.services
 	.difference
 		.projects
+			&-item 
+				&.featured
+					h4
+						font-size 2rem
 			&-link
 				&:hover
 					background-color transparent
+		.expanded
+			.projects-center-info
+				h4
+					font-size 4rem
+			.projects-link
+				&:hover
+					background-color rgba(0, 0, 0, 0.5)
 	.footer
 		&-logo
 			float left 
