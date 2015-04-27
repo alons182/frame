@@ -1162,7 +1162,7 @@ input[type="submit"] {
 .framing-description,
 .offer-description,
 .projects-description {
-  color: #e3e3e3;
+  color: #fff;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);

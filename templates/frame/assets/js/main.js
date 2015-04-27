@@ -53,10 +53,10 @@
    containerDifference.find('.projects-item div.projects-link').on('click', function (e) {
       //console.log($(this).parent('.projects-item'));
       var self = $(this).parent('.projects-item');
-      self.data('order',1);
-      console.log(self.data('order'));
+      
+      
       portafolio_click('300',containerDifference, self);
-       console.log(self.data('order'));
+      
       containerDifference.find('.projects-item').removeClass('expanded');
       containerDifference.find('.projects-item .projects-description').removeClass('expanded');
       self.addClass('expanded').find('.projects-description').addClass('expanded');
@@ -180,11 +180,17 @@
       if(newColCount > 1){
         newColWidth =Math.floor(contentWidth / newColCount);
         featureColWidth = newColWidth * 2;
+        featureColWidth2 = newColWidth * 3;
       }
 
       container.find('.projects-item').width(newColWidth);
 
-      itemClicked.width(featureColWidth);
+      
+      if(itemClicked.hasClass('featured2'))
+        itemClicked.width(featureColWidth2);
+      else
+        itemClicked.width(featureColWidth);
+    
 
       container.imagesLoaded(function(){
         container.isotope({

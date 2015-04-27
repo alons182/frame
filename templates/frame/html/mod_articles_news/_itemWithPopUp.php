@@ -28,7 +28,7 @@ $images  = json_decode($item->images);
 		<div class="projects-link">
 				<div class="projects-content">
 						<h4 class="projects-title"><?php echo $item->title; ?></h4>
-						<p class="projects-description">
+						<div class="projects-description">
 							<?php
 									$str = $item->introtext;
 
@@ -39,6 +39,6 @@ $images  = json_decode($item->images);
 
 							?>
 
-						</p>
+						</div>
 				</div>
 		</div>
