@@ -43,10 +43,11 @@ class JConfig {
 	public $caching = '0';
 	public $cache_handler = 'file';
 	public $cachetime = '15';
-	public $MetaDesc = '';
-	public $MetaKeys = '';
+	public $MetaDesc = 'FRAME PROJECTS combines the latest construction technology, top-flight materials and a passion for excellence to deliver you a finished project that will exceed your expectations. ';
+	public $MetaKeys = 'Build Costa Rica, Frame, Projects,
+Construction, Technology, top-flight materials ';
 	public $MetaTitle = '1';
-	public $MetaAuthor = '1';
+	public $MetaAuthor = '0';
 	public $MetaVersion = '0';
 	public $robots = '';
 	public $sef = '1';

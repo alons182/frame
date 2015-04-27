@@ -442,6 +442,8 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .build-fast-builds-smart:hover,.build-fast-offer-smart:hover,.build-green-builds-smart:hover,.build-green-offer-smart:hover,.build-smart-builds-smart:hover,.build-smart-offer-smart:hover,.framing-builds-smart:hover,.framing-offer-smart:hover,.offer-builds-smart:hover,.offer-offer-smart:hover,.project-builds-smart:hover,.project-offer-smart:hover{color:#00aeef}
 .build-fast-offer h1,.build-green-offer h1,.build-smart-offer h1,.framing-offer h1,.offer-offer h1,.project-offer h1{font-size:4rem;line-height:4rem}
 .build-fast-offer a:hover,.build-green-offer a:hover,.build-smart-offer a:hover,.framing-offer a:hover,.offer-offer a:hover,.project-offer a:hover{color:#00aeef}
+.about-community,.about-info{overflow:hidden}
+.about-community img,.about-info img{width:100%}
 .team{margin-top:1em;margin-bottom:3em}
 .team-title{text-align:center;padding-bottom:.5em}
 .team-img{-webkit-border-radius:50%;border-radius:50%;width:168px;filter:grayscale(100%);-webkit-filter:grayscale(100%);border:3px solid #787878}
@@ -477,6 +479,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .difference .projects-link:hover,.services .projects-link:hover{background-color:transparent}
 .difference .expanded .projects-center-info h4,.services .expanded .projects-center-info h4{font-size:4rem}
 .difference .expanded .projects-link:hover,.services .expanded .projects-link:hover{background-color:rgba(0,0,0,.5)}
+.about-community img,.about-info img{width:300px}
 .footer-logo{float:left;width:auto;margin-top:10px}
 .footer-copyright{float:right;position:absolute;right:1em;top:0}
 .footer-links{text-align:center;width:500px;margin:0 auto}

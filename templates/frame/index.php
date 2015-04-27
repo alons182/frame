@@ -51,9 +51,8 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
             <div class="header-contactCall">
               
               <a href="#"><i class="icon-facebook"></i></a>
-              <a href="#"><i class="icon-twitter"></i></a>
               <a href="#"><i class="icon-google-plus"></i></a>
-              <a href="#"><i class="icon-skype"></i></a>
+              <a href="skype:frame.test?chat"><i class="icon-skype"></i></a>
             </div>
           </div>
         </header>
