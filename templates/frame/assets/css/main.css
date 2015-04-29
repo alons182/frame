@@ -1196,6 +1196,10 @@ input[type="submit"] {
 .projects-image {
   width: 100%;
 }
+.services-container,
+.difference-container {
+  background: url("../img/bg_portafolio.png");
+}
 .services .projects-link,
 .difference .projects-link {
   background-color: rgba(0,0,0,0.5);
