@@ -17,7 +17,7 @@
   });
 
   $('<h1 class="txt-center">Other Projects</h1>').insertAfter('.project');
-  $('<h1 class="txt-center">Other Services</h1>').insertAfter('.offer');
+
 
   // MENU HOVER FUNCTION (SUBMENU)
 
@@ -62,7 +62,7 @@
       self.addClass('expanded').find('.projects-description').addClass('expanded');
       
       //containerDifference.isotope('updateSortData').isotope();
-     e.preventDefault();
+      //e.preventDefault();
      
    });
 

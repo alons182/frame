@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 				</div>
 			<?php else : ?>	
 				<?php if ($item->id == 35 || $item->id == 39 || $item->id == 40 || $item->id == 41) : ?>
-					<div class="projects-item default featured2" data-order="<?php echo $index ?>">
+					<div class="projects-item default " data-order="<?php echo $index ?>">
 						<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_itemWithPopUp'); ?>
 					</div>
 				<?php else : ?>	
