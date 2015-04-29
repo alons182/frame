@@ -341,7 +341,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .menu li a,.menu li span{display:block;padding:0 .5em;color:#b6cde9;cursor:pointer;font-size:1.2em}
 .menu li a:hover,.menu li span:hover{color:#fff}
 .menu .item-102 .nav-child,.menu .item-105 .nav-child,.menu .item-107 .nav-child{display:none!important}
-.menu .nav-child{display:none}
+.menu .nav-child{display:block}
 .menu .nav-child li a{color:#fff}
 .banner .inner{height:500px}
 .banner-slide{width:100%;height:500px;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover}
@@ -487,7 +487,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 @media only screen and (min-width:980px){.btn-menu{display:none}
 .menu{float:left;position:static;background:0 0;display:block!important;margin-left:.8em}
 .menu li{display:inline-block;vertical-align:top;line-height:84px;position:relative}
-.menu .nav-child{position:absolute;z-index:200;background:#446a8d;width:150px}
+.menu .nav-child{display:none;position:absolute;z-index:200;background:#446a8d;width:150px}
 .menu .nav-child li{display:block;line-height:25px;border-bottom:1px solid #2b5c7c}
 .menu .nav-child li a{display:block;padding:.5em}
 .menu .nav-child li a:hover{background:#2c323b}

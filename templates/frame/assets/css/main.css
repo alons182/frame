@@ -758,7 +758,7 @@ input[type="submit"] {
   display: none !important;
 }
 .menu .nav-child {
-  display: none;
+  display: block;
 }
 .menu .nav-child li a {
   color: #fff;
@@ -1794,6 +1794,7 @@ input[type="submit"] {
     position: relative;
   }
   .menu .nav-child {
+    display: none;
     position: absolute;
     z-index: 200;
     background: #446a8d;
