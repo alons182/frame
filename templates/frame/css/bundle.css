@@ -380,6 +380,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .partners-img{filter:grayscale(100%);-webkit-filter:grayscale(100%);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease}
 .partners-img:hover{filter:grayscale(0);-webkit-filter:grayscale(0)}
 .partners-item{display:inline-block;padding:.3em}
+.build-green ul li,.build-smart ul li{line-height:20px;margin-bottom:1em}
 .build-green-gallery,.build-smart-gallery{text-align:center}
 .contact-info{position:static;right:2em;bottom:2em}
 .contact-social a{display:inline-block;background:#787878;font-size:1.5rem;text-decoration:none!important;padding:.5rem;color:#fff!important}
