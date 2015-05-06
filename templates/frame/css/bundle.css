@@ -390,7 +390,6 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .contact-message{width:100%}
 .contact-message b{color:red}
 .b2j_contact{background:#fff!important}
-.b2jcontainer>div>label{width:0}
 .b2jcontainer h2{background:#446a8d}
 .b2jcontainer .btn{background:#2c323b!important;padding:.5rem!important;height:auto!important}
 .home{text-align:center}
@@ -509,7 +508,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .team-description{height:190px;overflow:hidden;-webkit-transition:all .3s ease;-moz-transition:all .3s ease;-o-transition:all .3s ease;-ms-transition:all .3s ease;transition:all .3s ease}
 .team-description.is-visible{height:auto;overflow:visible}
 .contact-info{position:absolute}
-.contact-message{width:64%}
+.contact-message{width:55%}
 .testimonials{background:#f4f4f4;padding:4em 0}
 .testimonials .inner{width:750px}
 .main .rightSection{width:34%;margin-left:1em}

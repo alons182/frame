@@ -296,8 +296,8 @@
     
   });
 
-
-
+// eliminar el el primer label del contact form
+$('.b2j_form').find('div label').first().css( "display", "none");
 
 
 

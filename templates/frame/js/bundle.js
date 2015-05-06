@@ -338,8 +338,8 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
     
   });
 
-
-
+// eliminar el el primer label del contact form
+$('.b2j_form').find('div label').first().css( "display", "none");
 
 
 

@@ -992,9 +992,6 @@ input[type="submit"] {
 .b2j_contact {
   background: #fff !important;
 }
-.b2jcontainer > div > label {
-  width: 0;
-}
 .b2jcontainer h2 {
   background: #446a8d;
 }
@@ -1905,7 +1902,7 @@ input[type="submit"] {
     position: absolute;
   }
   .contact-message {
-    width: 64%;
+    width: 55%;
   }
   .testimonials {
     background: #f4f4f4;
