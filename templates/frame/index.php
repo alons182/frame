@@ -52,7 +52,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
               
               <a href="https://www.facebook.com/pages/Frame-Projects/530518097057043" target="_blank"><i class="icon-facebook"></i></a>
               <!--<a href="#"><i class="icon-google-plus"></i></a>-->
-              <a href="skype:frame.test?chat"><i class="icon-skype"></i></a>
+              <a href="skype:frame.projects?chat"><i class="icon-skype"></i></a>
             </div>
           </div>
         </header>
