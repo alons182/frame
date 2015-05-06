@@ -366,6 +366,8 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .main .leftSection{width:100%}
 .bgid-101 .main{min-height:0}
 .bgid-102 .projects,.bgid-105 .framing-difference,.bgid-107 .offers{margin-top:-25px}
+.bgid-109 .partners{margin-top:-60px;float:right}
+.bgid-109 .partners a{width:89px}
 .benefits-tabs,.green-build{overflow:hidden}
 .benefits-tabs ul{margin:0;padding:0;list-style:none}
 .benefits-tabs li{display:inline-block;vertical-align:top;background-color:#446a8d;cursor:pointer;color:#fff;padding:.3em;margin-bottom:.5em}
@@ -379,7 +381,7 @@ button,input[type=submit]{background:rojo;border:none;clear:both;color:#fff;curs
 .partners-title{text-align:center}
 .partners-img{filter:grayscale(100%);-webkit-filter:grayscale(100%);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease;transition:all .5s ease}
 .partners-img:hover{filter:grayscale(0);-webkit-filter:grayscale(0)}
-.partners-item{display:inline-block;padding:.3em}
+.partners-item{display:inline-block;padding:.3em;vertical-align:middle}
 .build-green ul li,.build-smart ul li{line-height:20px;margin-bottom:1em}
 .build-green-gallery,.build-smart-gallery{text-align:center}
 .contact-info{position:static;right:2em;bottom:2em}

@@ -877,6 +877,13 @@ input[type="submit"] {
 .bgid-107 .offers {
   margin-top: -25px;
 }
+.bgid-109 .partners {
+  margin-top: -60px;
+  float: right;
+}
+.bgid-109 .partners a {
+  width: 89px;
+}
 .green-build {
   overflow: hidden;
 }
@@ -949,6 +956,7 @@ input[type="submit"] {
 .partners-item {
   display: inline-block;
   padding: 0.3em;
+  vertical-align: middle;
 }
 .build-smart ul li,
 .build-green ul li {
