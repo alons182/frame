@@ -1899,6 +1899,7 @@ input[type="submit"] {
     position: absolute;
   }
   .contact-message {
+    margin-left: -158px;
     width: 64%;
   }
   .testimonials {
