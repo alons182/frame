@@ -55,14 +55,14 @@ $itemid   = $app->input->getCmd('Itemid', '');
 
             <jdoc:include type="message" />
             <jdoc:include type="component" />
-            <div class="text404 txt-center">
+            <div class="text404 txt-center inner">
                     <h1 class="page-header"><?php echo JText::_('JERROR_LAYOUT_PAGE_NOT_FOUND'); ?></h1>
                         <div class="well">
                             <div class="row-fluid">
                                 <div class="span6">
                                     <p><strong><?php echo JText::_('JERROR_LAYOUT_ERROR_HAS_OCCURRED_WHILE_PROCESSING_YOUR_REQUEST'); ?></strong></p>
                                     <p><?php echo JText::_('JERROR_LAYOUT_NOT_ABLE_TO_VISIT'); ?></p>
-                                    <ul>
+                                    <ul style="list-style: none;">
                                         <li><?php echo JText::_('JERROR_LAYOUT_AN_OUT_OF_DATE_BOOKMARK_FAVOURITE'); ?></li>
                                         <li><?php echo JText::_('JERROR_LAYOUT_MIS_TYPED_ADDRESS'); ?></li>
                                         <li><?php echo JText::_('JERROR_LAYOUT_SEARCH_ENGINE_OUT_OF_DATE_LISTING'); ?></li>
