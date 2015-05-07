@@ -33,9 +33,6 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
 	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<jdoc:include type="head" />
 
-
-
-
 </head>
 
 
@@ -43,7 +40,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
 
         <header class="header">
           <div class="inner">
-            <a href="./" class="header-logo"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo.png" class="header-logo-img" alt="Frame Projects" /></a>
+            <a href="<?php echo $this->baseurl ?>" class="header-logo"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo.png" class="header-logo-img" alt="Frame Projects" /></a>
             <button class="btn-menu"><i class="icon-bars"></i></button>
             <nav class="menu">
                 <jdoc:include type="modules" name="menu" style="none" />
