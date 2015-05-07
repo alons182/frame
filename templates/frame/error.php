@@ -27,46 +27,37 @@ $itemid   = $app->input->getCmd('Itemid', '');
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/bundle.css" type="text/css" />
 
 </head>
-<body class="<?php echo ($itemid ? ' bgid-' . $itemid : '')?>">
-        
-         <header>
-            <section class="up-box">
-                <div class="inner">
-                  
-                    <?php
-                        $modules = JModuleHelper::getModules('up-box');
-                        foreach ($modules as $module) {
-                            echo JModuleHelper::renderModule($module->title);
-                                echo JModuleHelper::renderModule($module);
-                        }
-                                        ?>
-                            
-                    <jdoc:include type="modules" name="up-box" style="none" />
-                </div>
-                <em class="border-colors"></em>
-            </section>
-            <section class="down-box">
-                <div class="inner">
-                    <div id="logo"><a href="/"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo.png" alt="Guanacaste Viajes"></a></div>
-                     <nav id="menu">
-                        <?php if (JModuleHelper::getModule('menu')) : ?>
+
+<body class="<?php echo ($itemid ? ' bgid-' . $itemid : '')?>" data-form="<?php echo ($itemid ? $itemid : '')?>">
+
+        <header class="header">
+          <div class="inner">
+            <a href="./" class="header-logo"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo.png" class="header-logo-img" alt="Frame Projects" /></a>
+            <button class="btn-menu"><i class="icon-bars"></i></button>
+            <nav class="menu">
+                <?php if (JModuleHelper::getModule('menu')) : ?>
                             <?php
                                             $mt = JModuleHelper::getModule('menu');
                                             echo JModuleHelper::renderModule($mt);
                                         ?>
                             <?php endif; ?>
-                    </nav>
-                    <a href="#" class="btn-menu"><i class="icon-menu"></i></a>
-
-                </div>
-            </section>
+            </nav>
+            <div class="header-contactCall">
+              
+              <a href="https://www.facebook.com/pages/Frame-Projects/530518097057043" target="_blank"><i class="icon-facebook"></i></a>
+              <!--<a href="#"><i class="icon-google-plus"></i></a>-->
+              <a href="skype:frame.projects?chat"><i class="icon-skype"></i></a>
+            </div>
+          </div>
         </header>
-
         
-        <section class="main inner">
-                <div class="text404">
-                        <h1 class="page-header"><?php echo JText::_('JERROR_LAYOUT_PAGE_NOT_FOUND'); ?></h1>
-                            <div class="well">
+        <section class="main">
+
+            <jdoc:include type="message" />
+            <jdoc:include type="component" />
+            <div class="text404 txt-center">
+                    <h1 class="page-header"><?php echo JText::_('JERROR_LAYOUT_PAGE_NOT_FOUND'); ?></h1>
+                        <div class="well">
                             <div class="row-fluid">
                                 <div class="span6">
                                     <p><strong><?php echo JText::_('JERROR_LAYOUT_ERROR_HAS_OCCURRED_WHILE_PROCESSING_YOUR_REQUEST'); ?></strong></p>
@@ -99,17 +90,39 @@ $itemid   = $app->input->getCmd('Itemid', '');
                         </div>
 
                 </div>
-            
+
         </section>
-         <footer>
-            
-        </footer>
-       
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-        
+        <footer class="footer">
+            <div class="inner">
+                <span  class="footer-logo"><img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/img/logo-footer.png" alt="Frame Projects" /></span>
+                <?php
+                        $modules = JModuleHelper::getModules('footer-links');
+                        foreach ($modules as $module) {
+                            echo JModuleHelper::renderModule($module->title);
+                                echo JModuleHelper::renderModule($module);
+                        }
+                                        ?>
+                <div class="footer-copyright">
+                  © 2015 <span class="icon-avotz"></span>
+                </div>
+            </div>
+        </foooter>
+
+
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/bundle.js"></script>
 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+       <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>-->
+
+
+        <jdoc:include type="modules" name="debug" style="none" />
     </body>
 
 </html>
