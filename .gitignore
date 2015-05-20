@@ -1,5 +1,6 @@
 /templates/frame/node_modules
 /logs/*
+configuration.php
 .DS_Store
 Thumbs.db
 .idea
