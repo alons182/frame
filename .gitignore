@@ -1,4 +1,5 @@
 /templates/frame/node_modules
+/logs/*
 .DS_Store
 Thumbs.db
 .idea
