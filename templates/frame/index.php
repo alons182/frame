@@ -78,7 +78,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
                   © 2015 <a href="http://avotz.com" target="_blank"><span class="icon-avotz"></span></a>
                 </div>
             </div>
-        </foooter>
+        </footer>
 
 
         <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/bundle.js"></script>
