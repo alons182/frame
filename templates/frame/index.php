@@ -75,7 +75,7 @@ $doc->addStyleSheet('templates/'.$this->template.'/css/bundle.css');
                     <jdoc:include type="modules" name="footer-links" style="none" />
                 <?php endif; ?>
                 <div class="footer-copyright">
-                  © 2016 <a href="http://avotz.com" target="_blank"><span class="icon-avotz"></span></a>
+                  © 2015-<?php echo new date('Y'); ?> <a href="http://avotz.com" target="_blank"><span class="icon-avotz"></span></a>
                 </div>
             </div>
         </footer>
