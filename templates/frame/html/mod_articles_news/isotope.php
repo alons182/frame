@@ -19,7 +19,7 @@ defined('_JEXEC') or die;
 	<div class="projects-container" data-nav-color="#fff">
 		<?php foreach ($list as $index => $item) : ?>
 			
-			<div class="projects-item <?php echo ( $item->id == 19 || $item->id == 14 ) ?  'featured' : 'default'  ?>" data-order="<?php echo $index ?>">
+			<div class="projects-item <?php echo ( $item->id == 19 || $item->id == 14 || $item->id == 66 || $item->id == 67 || $item->id == 58) ?  'featured' : 'default'  ?>" data-order="<?php echo $index ?>">
 				<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
 			</div>
 				
