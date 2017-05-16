@@ -19,10 +19,25 @@ defined('_JEXEC') or die;
 	<div class="projects-container" data-nav-color="#fff">
 		<?php foreach ($list as $index => $item) : ?>
 			
-			<div class="projects-item <?php echo ( $item->id == 19 || $item->id == 14 || $item->id == 66 || $item->id == 67 || $item->id == 58) ?  'featured' : 'default'  ?>" data-order="<?php echo $index ?>">
+			<?php if ( $item->id == 66 || $item->id == 58) :  ?>
+				<div class="projects-item featured-4" data-order="<?php echo $index ?>">
 				<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
-			</div>
-				
+				</div>
+			<?php else if ( $item->id == 67) :  ?> 
+				<div class="projects-item featured-3" data-order="<?php echo $index ?>">
+				<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
+				</div>
+			<?php else if ( $item->id == 19 || $item->id == 14) :  ?> 
+				<div class="projects-item featured" data-order="<?php echo $index ?>">
+				<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
+				</div>
+			<?php else : ?>
+			 	<div class="projects-item default" data-order="<?php echo $index ?>">
+			 	<?php require JModuleHelper::getLayoutPath('mod_articles_news', '_item'); ?>
+				</div>
+		    <?php endif; ?>
+			
+	
 
 		<?php endforeach; ?>
 	</div>
