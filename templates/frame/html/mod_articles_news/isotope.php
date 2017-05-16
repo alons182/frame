@@ -23,11 +23,11 @@ defined('_JEXEC') or die;
 			
 			<?php if ( $item->id == 66 || $item->id == 58) :  ?>
 				
-				<?php $classFeatured = "featured-4"; ?>
+				<?php $classFeatured = "featured"; ?>
 				
 		    <?php endif; ?>
 			<?php if ( $item->id == 67) :  ?> 
-				<?php $classFeatured = "featured-3"; ?>
+				<?php $classFeatured = "featured"; ?>
 			 <?php endif; ?>
 			<?php if ( $item->id == 19 || $item->id == 14) :  ?> 
 				<?php $classFeatured = "featured"; ?>
