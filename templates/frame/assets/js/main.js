@@ -131,6 +131,8 @@
       var newColCount     = 0;
       var newColWidth     = 0;
       var featureColWidth = 0;
+      var featureColWidth3 = 0;
+      var featureColWidth4 = 0;
 
       curColCount = Math.floor(contentWidth / columnWidth);
 
@@ -144,16 +146,22 @@
 
       newColWidth = contentWidth;
       featureColWidth = contentWidth;
+      featureColWidth3 = contentWidth;
+      featureColWidt4 = contentWidth;
 
 
       if(newColCount > 1){
         newColWidth =Math.floor(contentWidth / newColCount);
         featureColWidth = newColWidth * 2;
+        featureColWidth3 = newColWidth * 3;
+        featureColWidth4 = newColWidth * 4;
       }
 
       container.find('.projects-item').width(newColWidth);
 
       container.find('.featured').width(featureColWidth);
+      container.find('.featured-3').width(featureColWidth3);
+      container.find('.featured-4').width(featureColWidth4);
 
       container.imagesLoaded(function(){
         container.isotope({
@@ -176,6 +184,8 @@
       var newColCount     = 0;
       var newColWidth     = 0;
       var featureColWidth = 0;
+      var featureColWidth3 = 0;
+      var featureColWidth4 = 0;
 
       curColCount = Math.floor(contentWidth / columnWidth);
 
@@ -189,12 +199,16 @@
 
       newColWidth = contentWidth;
       featureColWidth = contentWidth;
+      featureColWidth3 = contentWidth;
+      featureColWidth4 = contentWidth;
 
 
       if(newColCount > 1){
         newColWidth =Math.floor(contentWidth / newColCount);
         featureColWidth = newColWidth * 2;
         featureColWidth2 = newColWidth * 3;
+        featureColWidth3 = newColWidth * 3;
+        featureColWidth4 = newColWidth * 4;
       }
 
       container.find('.projects-item').width(newColWidth);
